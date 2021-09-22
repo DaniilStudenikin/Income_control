@@ -5,9 +5,11 @@ import ru.gold_farm_app.income_control.model.ResourcePrice;
 import java.util.Optional;
 
 public interface ResourcePriceService {
-    void add(ResourcePrice resourcePrice);
+    void addAll();
 
-    Optional<ResourcePrice> update(ResourcePrice resourcePrice);
+    void updateData();
+
+    void add(String server);
 
     Optional<ResourcePrice> get(ResourcePrice resourcePrice);
 }

@@ -1,40 +1,36 @@
 package ru.gold_farm_app.income_control.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import ru.gold_farm_app.income_control.model.NexushubUser;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 import ru.gold_farm_app.income_control.services.NexushubService;
 
-import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
-@Controller
+
+
+@RestController
 public class NexushubController {
-    @Autowired
-    private ObjectMapper mapper;
 
     @Autowired
     private NexushubService service;
 
-    @PostMapping(value = "/register")
-    @ResponseBody
-    public String register() {
+    @GetMapping(value = "/register")
+    public ResponseEntity<String> register() {
         service.register();
-        return "";
+        return ResponseEntity.ok().build();
     }
 
-    @PostMapping(value = "/authenticate")
-    public String authenticate() {
+    @GetMapping(value = "/authenticate")
+    public ResponseEntity<String> authenticate() {
         service.authenticate();
-        return "";
+        return ResponseEntity.ok().build();
+    }
+
+    @GetMapping(value = "/refresh")
+    public ResponseEntity<String> refresh() {
+        service.refresh();
+        return ResponseEntity.ok().build();
     }
 }

@@ -23,9 +23,11 @@ public class ResourcePrice {
 
     private String name;
 
+    private String uniqueName;
+
     private Long itemId;
 
-    private Double price;
+    private Long price;
 
     private LocalDateTime scannedOn;
 

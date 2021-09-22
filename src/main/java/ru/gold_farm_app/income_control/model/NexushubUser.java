@@ -6,10 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Data
@@ -23,23 +20,20 @@ public class NexushubUser {
     private Long id;
 
     //login
-    @JsonProperty("user_id")
     private String user_id;
 
     //password
-    @JsonProperty("user_secret")
     private String user_secret;
 
     //key to get access token
-    @JsonProperty("user_key")
     private String user_key;
 
     //token to access API
-    @JsonProperty("access_token")
+    @Column(length = 500)
     private String access_token;
 
     //token to refresh access token
-    @JsonProperty("refresh_token")
+    @Column(length = 500)
     private String refresh_token;
 
     private LocalDateTime createdOn;
