@@ -29,7 +29,7 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
     @Autowired
     private ResourcePriceRepository repository;
 
-    private static final String[] servers = {"venoxis-alliance", "gehennas-horde"};
+    private List<String> servers = new ArrayList<>();
 
     private final Map<Integer, String> RESOURCES_MAP = Map.ofEntries(
             entry(22786, "dreaming-glory"),
@@ -61,8 +61,6 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
 
     @Override
     public void addAll() {
-        createDirectory();
-
         for (String server : servers) {
             for (var entry : RESOURCES_MAP.entrySet()) {
                 StringBuilder urlBuilder = new StringBuilder("https://api.nexushub.co/wow-classic/v1/items/")
@@ -82,10 +80,7 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
 
                     repository.save(resourcePrice);
 
-                    String pathOfJsonFile = "src/main/resources/json_response/" + LocalDate.now() +
-                            "/" + resourcePrice.getUniqueName() + "_" + server + ".json";
-                    //Creating json file
-                    objectMapper.writeValue(new File(pathOfJsonFile), json);
+
                     //Because 20 request per 5 sec
                     Thread.sleep(200);
                 } catch (IOException | InterruptedException e) {
@@ -98,7 +93,6 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
     @Scheduled(fixedDelay = 1000 * 60 * 60 * 24)
     @Override
     public void updateData() {
-        createDirectory();
         List<ResourcePrice> resourcePrices = repository.findAll();
 
         for (var resourcePrice : resourcePrices) {
@@ -109,10 +103,6 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
                 JsonNode json = objectMapper.readTree(url);
                 resourcePrice.setPrice(json.get("stats").get("current").get("minBuyout").asLong());
                 repository.save(resourcePrice);
-                String pathOfJsonFile = "src/main/resources/json_response/" + LocalDate.now() +
-                        "/" + resourcePrice.getUniqueName() + "_" + resourcePrice.getServerFraction() + ".json";
-
-                objectMapper.writeValue(new File(pathOfJsonFile), json);
                 Thread.sleep(200);
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
@@ -122,7 +112,7 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
 
     @Override
     public void add(String server) {
-
+        servers.add(server);
     }
 
 
@@ -130,6 +120,7 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
     public Optional<ResourcePrice> get(ResourcePrice resourcePrice) {
         return Optional.of(repository.getById(resourcePrice.getId()));
     }
+
     //TODO:сделать проверку на директорию чтобы добавить цены по новому серверу
     public void createDirectory() {
         var pathOfDirectory = new StringBuilder().append("src/main/resources/json_response/").append(LocalDate.now());
