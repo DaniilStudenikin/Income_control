@@ -12,7 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 @Entity
-public class Resources {
+public class ForSale {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -61,14 +61,18 @@ public class Resources {
 
     private Integer nobleTopaz;
 
-    //Motes
-    private Integer moteOfEarth;
 
-    private Integer moteOfFire;
+    //Primal
 
-    private Integer moteOfMana;
+    private Integer primalEarth;
 
-    private Integer moteOfLife;
+    private Integer primalFire;
+
+    private Integer primalMana;
+
+    private Integer primalAir;
+
+    private Integer primalLife;
 
     @ManyToOne
     private Employee employee;

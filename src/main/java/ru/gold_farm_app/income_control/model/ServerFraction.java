@@ -9,28 +9,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Entity
-public class ResourcePrice {
+public class ServerFraction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
-
-    private String uniqueName;
-
-    private Long itemId;
-
-    private Long price;
-
-    private LocalDateTime scannedOn;
-
     private String serverFraction;
-
 }

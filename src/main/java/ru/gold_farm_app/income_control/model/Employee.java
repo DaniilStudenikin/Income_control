@@ -24,5 +24,5 @@ public class Employee {
     private String serverFraction;
 
     @OneToMany
-    List<Resources> resourcesList;
+    List<ForSale> forSaleList;
 }
