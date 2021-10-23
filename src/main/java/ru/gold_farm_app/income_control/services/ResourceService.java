@@ -5,12 +5,7 @@ import ru.gold_farm_app.income_control.model.Resource;
 import java.util.List;
 
 public interface ResourceService {
+    void add(Long itemId);
 
-    void addAll();
-
-    void updatePrice(Long id);
-
-    void updateAll();
-
-    List<Resource> getAllResources();
+    void delete(Long itemId);
 }

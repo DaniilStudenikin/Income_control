@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -73,6 +75,10 @@ public class ForSale {
     private Integer primalAir;
 
     private Integer primalLife;
+
+    private Long price;
+
+    private LocalDate date;
 
     @ManyToOne
     private Employee employee;

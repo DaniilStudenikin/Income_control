@@ -6,7 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.net.URL;
+
 
 @Data
 @AllArgsConstructor
@@ -24,11 +25,6 @@ public class Resource {
 
     private Long itemId;
 
-    private Long price;
-
-    private LocalDateTime scannedOn;
-
-    @ManyToOne
-    private ServerFraction serverFraction;
+    private URL icon;
 
 }

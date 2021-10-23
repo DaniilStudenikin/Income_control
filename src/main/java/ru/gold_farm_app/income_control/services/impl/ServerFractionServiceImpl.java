@@ -6,7 +6,6 @@ import ru.gold_farm_app.income_control.model.ServerFraction;
 import ru.gold_farm_app.income_control.repository.ServerFractionRepository;
 import ru.gold_farm_app.income_control.services.ServerFractionService;
 
-import java.util.List;
 
 @Service
 public class ServerFractionServiceImpl implements ServerFractionService {
@@ -15,14 +14,15 @@ public class ServerFractionServiceImpl implements ServerFractionService {
     private ServerFractionRepository serverFractionRepository;
 
     @Override
-    public void addServerFraction(String server) {
+    public void addServer(String server) {
         serverFractionRepository.save(ServerFraction.builder()
                 .serverFraction(server)
                 .build());
     }
 
     @Override
-    public List<ServerFraction> getAllServerFractions() {
-        return serverFractionRepository.findAll();
+    public void deleteServer(String server) {
+        serverFractionRepository.delete(serverFractionRepository.findByServerFraction(server)
+                .orElseThrow(IllegalArgumentException::new));
     }
 }

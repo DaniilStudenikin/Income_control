@@ -15,9 +15,15 @@ public class ServerFractionListenerImpl implements ServerFractionListener {
 
     @Override
     public void onMessageCreate(MessageCreateEvent messageCreateEvent) {
-        if (messageCreateEvent.getMessageContent().startsWith("!server-fraction_add")) {
-            service.addServerFraction(messageCreateEvent.getMessageContent().substring(21));
-            messageCreateEvent.getChannel().sendMessage("Server " + messageCreateEvent.getMessageContent().substring(21) + " added!");
+        if (messageCreateEvent.getMessageContent().startsWith("!server_add")) {
+            String server = messageCreateEvent.getMessageContent().replace(" ", "").substring(11);
+            service.addServer(server);
+            messageCreateEvent.getChannel().sendMessage("Server " + server + " added!");
+        }
+        if (messageCreateEvent.getMessageContent().startsWith("!server_delete")) {
+            String server = messageCreateEvent.getMessageContent().replace(" ", "").substring(14);
+            service.deleteServer(server);
+            messageCreateEvent.getChannel().sendMessage("Server " + server + " deleted!");
         }
     }
 }
