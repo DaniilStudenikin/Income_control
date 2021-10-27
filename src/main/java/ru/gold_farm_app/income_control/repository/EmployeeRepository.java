@@ -7,5 +7,5 @@ import ru.gold_farm_app.income_control.model.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
-
+    Employee findByDiscordName(String discordName);
 }

@@ -6,4 +6,5 @@ import ru.gold_farm_app.income_control.model.Resource;
 
 @Repository
 public interface ResourceRepository extends JpaRepository<Resource, Long> {
+    Resource findByName(String name);
 }

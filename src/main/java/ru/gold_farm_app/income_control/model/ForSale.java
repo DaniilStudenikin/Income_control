@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -31,12 +30,16 @@ public class ForSale {
 
     private Integer felLotus;
 
+    private Integer netherbloom;
+
     //Ores
     private Integer felIronOre;
 
     private Integer eterniumOre;
 
     private Integer adamantiteOre;
+
+    private Integer khoriumOre;
 
     //Gems
     private Integer bloodGarnet;
@@ -76,6 +79,8 @@ public class ForSale {
 
     private Integer primalLife;
 
+
+    //other
     private Long price;
 
     private LocalDate date;

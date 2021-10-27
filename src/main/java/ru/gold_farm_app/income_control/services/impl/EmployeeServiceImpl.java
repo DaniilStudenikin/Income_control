@@ -22,4 +22,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Optional<Employee> get(Employee employee) {
         return Optional.of(employeeRepository.getById(employee.getId()));
     }
+
+    @Override
+    public void addIncome(String discordName, Long gold) {
+        Employee employee = employeeRepository.findByDiscordName(discordName);
+        employee.setGold(gold);
+        employeeRepository.save(employee);
+    }
 }

@@ -21,8 +21,7 @@ public class Employee {
 
     private Long gold;
 
-    private String serverFraction;
+    @ManyToOne
+    private ServerFraction serverFraction;
 
-    @OneToMany
-    List<ForSale> forSaleList;
 }

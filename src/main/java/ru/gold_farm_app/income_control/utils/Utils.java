@@ -12,10 +12,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
-import ru.gold_farm_app.income_control.listeners.EmployeeListener;
-import ru.gold_farm_app.income_control.listeners.ForSaleListener;
-import ru.gold_farm_app.income_control.listeners.ResourceListener;
-import ru.gold_farm_app.income_control.listeners.ServerFractionListener;
+import ru.gold_farm_app.income_control.listeners.*;
 
 
 @Component
@@ -37,6 +34,9 @@ public class Utils {
     private ForSaleListener forSaleListener;
 
     @Autowired
+    private ResourcePriceListener resourcePriceListener;
+
+    @Autowired
     private DiscordApi api;
 
     @Bean
@@ -48,6 +48,7 @@ public class Utils {
                 .addMessageCreateListener(resourceListener)
                 .addMessageCreateListener(employeeListener)
                 .addMessageCreateListener(forSaleListener)
+                .addMessageCreateListener(resourcePriceListener)
                 .login().join();
     }
 
