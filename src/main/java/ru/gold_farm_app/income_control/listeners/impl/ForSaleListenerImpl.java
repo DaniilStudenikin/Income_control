@@ -44,7 +44,7 @@ public class ForSaleListenerImpl implements ForSaleListener {
             for (String value : splitedForSale) {
                 forSaleResourcesList.add(value.split("="));
             }
-            if (forSaleResourcesList.size() != 27) {
+            if (forSaleResourcesList.size() != 28) {
                 event.getChannel().sendMessage("Dear " + event.getMessageAuthor().getDisplayName() + ", please check you message and try again! You have some mistakes.");
             } else {
                 ForSale forSale = forSaleService.createForSale(forSaleResourcesList, event.getMessageAuthor().getDiscriminatedName());

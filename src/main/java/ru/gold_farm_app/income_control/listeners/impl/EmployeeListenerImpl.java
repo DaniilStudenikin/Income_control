@@ -27,7 +27,7 @@ public class EmployeeListenerImpl implements EmployeeListener {
                         .findByServerFraction(event.getMessageContent().replace(" ", "").substring(5)).orElseThrow(IllegalArgumentException::new);
                 employeeService.add(Employee.builder()
                         .discordName(event.getMessageAuthor().getDiscriminatedName())
-                        .serverFraction(server)
+                        .server(server)
                         .gold(0L)
                         .build());
                 new MessageBuilder()

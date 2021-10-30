@@ -5,8 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.transaction.annotation.Transactional;
 import ru.gold_farm_app.income_control.model.*;
 import ru.gold_farm_app.income_control.repository.EmployeeRepository;
 import ru.gold_farm_app.income_control.repository.ForSaleRepository;
@@ -55,7 +53,7 @@ public class ForSaleServiceImpl implements ForSaleService {
     private ForSale from(List<String[]> forSaleResourceList) {
         ForSale forSale = new ForSale();
         forSale.setDate(LocalDate.now());
-        for (int i = 0; i < 27; i++) {
+        for (int i = 0; i < 28; i++) {
             String[] s = forSaleResourceList.get(i);
             int amount = anInt(s);
             switch (i) {
@@ -72,46 +70,48 @@ public class ForSaleServiceImpl implements ForSaleService {
                 case 5:
                     forSale.setNetherbloom(amount);
                 case 6:
-                    forSale.setFelIronOre(amount);
+                    forSale.setTerocone(amount);
                 case 7:
-                    forSale.setEterniumOre(amount);
+                    forSale.setFelIronOre(amount);
                 case 8:
-                    forSale.setAdamantiteOre(amount);
+                    forSale.setEterniumOre(amount);
                 case 9:
-                    forSale.setKhoriumOre(amount);
+                    forSale.setAdamantiteOre(amount);
                 case 10:
-                    forSale.setBloodGarnet(amount);
+                    forSale.setKhoriumOre(amount);
                 case 11:
-                    forSale.setFlameSpessarite(amount);
+                    forSale.setBloodGarnet(amount);
                 case 12:
-                    forSale.setGoldenDraenite(amount);
+                    forSale.setFlameSpessarite(amount);
                 case 13:
-                    forSale.setShadowDraenite(amount);
+                    forSale.setGoldenDraenite(amount);
                 case 14:
-                    forSale.setDeepPeridot(amount);
+                    forSale.setShadowDraenite(amount);
                 case 15:
-                    forSale.setAzureMoonstone(amount);
+                    forSale.setDeepPeridot(amount);
                 case 16:
-                    forSale.setDawnstone(amount);
+                    forSale.setAzureMoonstone(amount);
                 case 17:
-                    forSale.setNightseye(amount);
+                    forSale.setDawnstone(amount);
                 case 18:
-                    forSale.setStarOfElune(amount);
+                    forSale.setNightseye(amount);
                 case 19:
-                    forSale.setTalasite(amount);
+                    forSale.setStarOfElune(amount);
                 case 20:
-                    forSale.setLivingRuby(amount);
+                    forSale.setTalasite(amount);
                 case 21:
-                    forSale.setNobleTopaz(amount);
+                    forSale.setLivingRuby(amount);
                 case 22:
-                    forSale.setPrimalMana(amount);
+                    forSale.setNobleTopaz(amount);
                 case 23:
-                    forSale.setPrimalFire(amount);
+                    forSale.setPrimalMana(amount);
                 case 24:
-                    forSale.setPrimalLife(amount);
+                    forSale.setPrimalFire(amount);
                 case 25:
-                    forSale.setPrimalEarth(amount);
+                    forSale.setPrimalLife(amount);
                 case 26:
+                    forSale.setPrimalEarth(amount);
+                case 27:
                     forSale.setPrimalAir(amount);
             }
         }
@@ -123,7 +123,7 @@ public class ForSaleServiceImpl implements ForSaleService {
         long price = 0L;
         //[ResourceName(DreamingGlory), ]
         for (String[] s : list) {
-            price += resourcePriceRepository.findByResourceAndServer(getResourceByName(s[0]), employee.getServerFraction()).orElseThrow(IllegalArgumentException::new).getPrice() * anInt(s);
+            price += resourcePriceRepository.findByResourceAndServer(getResourceByName(s[0]), employee.getServer()).orElseThrow(IllegalArgumentException::new).getPrice() * anInt(s);
         }
         return price;
     }

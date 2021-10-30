@@ -22,6 +22,6 @@ public class Employee {
     private Long gold;
 
     @ManyToOne
-    private ServerFraction serverFraction;
+    private ServerFraction server;
 
 }

@@ -32,6 +32,8 @@ public class ForSale {
 
     private Integer netherbloom;
 
+    private Integer terocone;
+
     //Ores
     private Integer felIronOre;
 
