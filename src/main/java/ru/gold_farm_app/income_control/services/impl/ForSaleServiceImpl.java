@@ -12,6 +12,7 @@ import ru.gold_farm_app.income_control.repository.EmployeeRepository;
 import ru.gold_farm_app.income_control.repository.ForSaleRepository;
 import ru.gold_farm_app.income_control.repository.ResourcePriceRepository;
 import ru.gold_farm_app.income_control.repository.ResourceRepository;
+import ru.gold_farm_app.income_control.services.EmployeeService;
 import ru.gold_farm_app.income_control.services.ForSaleService;
 
 import java.time.LocalDate;
@@ -32,20 +33,19 @@ public class ForSaleServiceImpl implements ForSaleService {
     @Autowired
     private ResourcePriceRepository resourcePriceRepository;
 
+    @Autowired
+    private EmployeeService employeeService;
+
     @Override
     public ForSale createForSale(List<String[]> forSaleList, String discordName) {
         Employee employee = employeeRepository.findByDiscordName(discordName);
         ForSale forSale = from(forSaleList);
-        System.out.println("Before:" + employee.toString());
         Long price = price(forSaleList, employee);
         //adding gold into employee's acc
-        employee.setGold(employee.getGold() + price);
-        System.out.println("Gold for sale: " + price);
         forSale.setPrice(price);
         forSale.setEmployee(employee);
 
-        System.out.println("After: " + employee.toString());
-        employeeRepository.save(employee);
+        employeeService.addIncome(discordName, forSale.getPrice());
         forSaleRepository.save(forSale);
         logger.info(employee + "///" + forSale);
         return forSale;

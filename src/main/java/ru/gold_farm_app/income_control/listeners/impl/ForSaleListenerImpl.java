@@ -48,7 +48,7 @@ public class ForSaleListenerImpl implements ForSaleListener {
                 event.getChannel().sendMessage("Dear " + event.getMessageAuthor().getDisplayName() + ", please check you message and try again! You have some mistakes.");
             } else {
                 ForSale forSale = forSaleService.createForSale(forSaleResourcesList, event.getMessageAuthor().getDiscriminatedName());
-                employeeService.addIncome(event.getMessageAuthor().getDiscriminatedName(), forSale.getPrice());
+                ///
                 var g = forSale.getPrice() / 10000;
                 var s = forSale.getPrice() / 100 % 100;
                 var c = forSale.getPrice() % 100;
