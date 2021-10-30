@@ -35,7 +35,7 @@ public class EmployeeListenerImpl implements EmployeeListener {
                         .append("Your server is " + server.getServerFraction() + "!")
                         .send(event.getChannel());
             } catch (IllegalArgumentException e) {
-                event.getChannel().sendMessage("Your message is wrong.Please,try again");
+                event.getChannel().sendMessage("Your message is wrong.Please,try again.It maybe problem with server name.");
             }
 
         }

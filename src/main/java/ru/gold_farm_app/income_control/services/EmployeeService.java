@@ -10,4 +10,6 @@ public interface EmployeeService {
     Optional<Employee> get(Employee employee);
 
     void addIncome(String discordName, Long gold);
+
+    void delete(Employee employee);
 }

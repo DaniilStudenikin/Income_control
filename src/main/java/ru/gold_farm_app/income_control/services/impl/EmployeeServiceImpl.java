@@ -18,6 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeRepository.save(employee);
     }
 
+
     @Override
     public Optional<Employee> get(Employee employee) {
         return Optional.of(employeeRepository.getById(employee.getId()));
@@ -28,5 +29,10 @@ public class EmployeeServiceImpl implements EmployeeService {
         Employee employee = employeeRepository.findByDiscordName(discordName);
         employee.setGold(gold);
         employeeRepository.save(employee);
+    }
+
+    @Override
+    public void delete(Employee employee) {
+        employeeRepository.delete(employee);
     }
 }

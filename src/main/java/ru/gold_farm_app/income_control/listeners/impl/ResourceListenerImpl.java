@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import ru.gold_farm_app.income_control.listeners.ResourceListener;
 import ru.gold_farm_app.income_control.model.Resource;
 import ru.gold_farm_app.income_control.repository.ResourceRepository;
-import ru.gold_farm_app.income_control.services.ResourceService;
+
 
 import java.util.List;
 
@@ -19,8 +19,7 @@ public class ResourceListenerImpl implements ResourceListener {
 
     @Override
     public void onMessageCreate(MessageCreateEvent event) {
-        if (event.getMessageContent().equals("!resources")) {
-            System.out.println(12312312);
+        if (event.getMessageContent().equals("!resources") && event.getMessageAuthor().getDisplayName().equals("fastrapier1")) {
             List<Resource> resources = resourceRepository.findAll();
             for (Resource res : resources) {
                 new MessageBuilder().append("Name = " + res.getName() + ".")

@@ -13,6 +13,7 @@ public class ServerFractionServiceImpl implements ServerFractionService {
     @Autowired
     private ServerFractionRepository serverFractionRepository;
 
+    //adding server-fraction to Data Base from parsed string(!auth gehennas-horde)
     @Override
     public void addServer(String server) {
         serverFractionRepository.save(ServerFraction.builder()

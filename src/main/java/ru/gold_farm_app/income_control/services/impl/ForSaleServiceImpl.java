@@ -1,25 +1,25 @@
 package ru.gold_farm_app.income_control.services.impl;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.gold_farm_app.income_control.model.Employee;
-import ru.gold_farm_app.income_control.model.ForSale;
-import ru.gold_farm_app.income_control.model.Resource;
-import ru.gold_farm_app.income_control.model.ResourcePrice;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.annotation.Transactional;
+import ru.gold_farm_app.income_control.model.*;
 import ru.gold_farm_app.income_control.repository.EmployeeRepository;
 import ru.gold_farm_app.income_control.repository.ForSaleRepository;
 import ru.gold_farm_app.income_control.repository.ResourcePriceRepository;
 import ru.gold_farm_app.income_control.repository.ResourceRepository;
 import ru.gold_farm_app.income_control.services.ForSaleService;
 
+import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
-
 
 @Service
 public class ForSaleServiceImpl implements ForSaleService {
-
+    private static final Logger logger = LoggerFactory.getLogger(ForSaleServiceImpl.class);
     @Autowired
     private ForSaleRepository forSaleRepository;
 
@@ -35,16 +35,26 @@ public class ForSaleServiceImpl implements ForSaleService {
     @Override
     public ForSale createForSale(List<String[]> forSaleList, String discordName) {
         Employee employee = employeeRepository.findByDiscordName(discordName);
-        ForSale forSale = from(forSaleList, employee);
+        ForSale forSale = from(forSaleList);
+        System.out.println("Before:" + employee.toString());
+        Long price = price(forSaleList, employee);
+        //adding gold into employee's acc
+        employee.setGold(employee.getGold() + price);
+        System.out.println("Gold for sale: " + price);
+        forSale.setPrice(price);
+        forSale.setEmployee(employee);
+
+        System.out.println("After: " + employee.toString());
+        employeeRepository.save(employee);
         forSaleRepository.save(forSale);
+        logger.info(employee + "///" + forSale);
         return forSale;
     }
 
-
-    private ForSale from(List<String[]> forSaleResourceList, Employee employee) {
+    //creating object ForSale from resourceList which is String array
+    private ForSale from(List<String[]> forSaleResourceList) {
         ForSale forSale = new ForSale();
-        forSale.setEmployee(employee);
-        forSale.setPrice(price(forSaleResourceList, employee));
+        forSale.setDate(LocalDate.now());
         for (int i = 0; i < 27; i++) {
             String[] s = forSaleResourceList.get(i);
             int amount = anInt(s);
@@ -105,25 +115,25 @@ public class ForSaleServiceImpl implements ForSaleService {
                     forSale.setPrimalAir(amount);
             }
         }
-
         return forSale;
     }
 
+    //counting price is here
     private Long price(List<String[]> list, Employee employee) {
         long price = 0L;
-        ResourcePrice resourcePrice = resourcePriceRepository.findByResourceAndServer(getResourceByName(list.get(0)[0]), employee.getServerFraction()).orElseThrow(IllegalArgumentException::new);
-
-        System.out.println(resourcePrice.getPrice());
+        //[ResourceName(DreamingGlory), ]
         for (String[] s : list) {
             price += resourcePriceRepository.findByResourceAndServer(getResourceByName(s[0]), employee.getServerFraction()).orElseThrow(IllegalArgumentException::new).getPrice() * anInt(s);
         }
         return price;
     }
 
+    //simplified method to get Resource because resourceRepository.findByName(name) is long//getResourceByName is Short
     private Resource getResourceByName(String name) {
         return resourceRepository.findByName(name);
     }
 
+    //simplified method to get Integer from array and parse it from String
     private int anInt(String[] s) {
         return Integer.parseInt(s[1]);
     }
