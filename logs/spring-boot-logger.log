@@ -440,3 +440,306 @@
 2021-10-30 19:22:13,403 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
 2021-10-30 19:22:13,430 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
 2021-10-30 19:22:13,446 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 6.843 seconds (JVM running for 8.41)
+2021-10-30 19:47:23,357 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 4] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:50:28,899 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 19:50:29,152 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:50:29,158 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 19:50:29,169 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 19:50:34,124 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 10976 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:50:34,127 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:50:34,186 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:50:34,187 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:50:34,945 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:50:35,040 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 85 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:50:35,767 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-10-30 19:50:35,777 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:50:35,777 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:50:35,778 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:50:35,876 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:50:35,876 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1688 ms
+2021-10-30 19:50:35,942 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-10-30 19:50:35,945 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-10-30 19:50:35,963 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-30 19:50:35,986 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-10-30 19:51:56,111 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 8816 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:51:56,114 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:51:56,178 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:51:56,178 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:51:57,067 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:51:57,197 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 119 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:51:58,059 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-10-30 19:51:58,073 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:51:58,074 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:51:58,074 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:51:58,219 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:51:58,219 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2040 ms
+2021-10-30 19:51:58,291 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-10-30 19:51:58,294 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-10-30 19:51:58,315 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-30 19:51:58,348 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-10-30 19:52:31,165 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 4228 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:52:31,168 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:52:31,213 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:52:31,214 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:52:31,955 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:52:32,083 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 108 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:52:33,256 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-10-30 19:52:33,311 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:52:33,313 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:52:33,314 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:52:33,505 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:52:33,506 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2292 ms
+2021-10-30 19:52:33,703 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 19:52:33,938 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 19:52:34,134 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 19:52:34,196 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 19:52:34,361 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 19:52:34,483 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-30 19:52:35,462 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 19:52:35,471 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:52:38,045 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 19:52:38,516 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 19:52:38,605 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 19:52:38,637 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:52:38,662 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-30 19:52:38,680 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 8.137 seconds (JVM running for 9.788)
+2021-10-30 19:53:29,519 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:53:59,627 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:55:32,841 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 19:55:33,535 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:55:33,545 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 19:55:33,560 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 19:55:40,518 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 13796 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:55:40,521 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:55:40,576 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:55:40,576 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:55:41,327 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:55:41,423 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:55:42,168 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-10-30 19:55:42,177 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:55:42,178 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:55:42,178 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:55:42,291 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:55:42,292 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1715 ms
+2021-10-30 19:55:42,372 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 19:55:42,546 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 19:55:42,658 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 19:55:42,705 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 19:55:42,843 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 19:55:42,962 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-30 19:55:43,656 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 19:55:43,665 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:55:46,265 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 19:55:46,694 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 19:55:46,793 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 19:55:46,829 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:55:46,859 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-30 19:55:46,882 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 7.026 seconds (JVM running for 8.821)
+2021-10-30 19:56:02,547 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [Javacord - Central Scheduler - 1] Detected a listener thread for Farmers which is now running for over 10 seconds (10016 ms). This is a very unusually long execution time for a listener task. Make sure to not do any heavy computations in listener threads!
+2021-10-30 19:56:31,142 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 1] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:58:08,520 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:59:08,622 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Javacord - Central ExecutorService - 5] SQL Error: 0, SQLState: 23505
+2021-10-30 19:59:08,623 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Javacord - Central ExecutorService - 5] ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "uk_o713vnu3h8p41rw7bjybtqbm"
+  Подробности: Ключ "(discord_name)=(Begiç#4247)" уже существует.
+2021-10-30 19:59:08,637 ERROR org.javacord.core.util.logging.PrivacyProtectionLogger [Javacord - Central ExecutorService - 5] Unhandled exception in a listener thread for Farmers!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy88.save(Unknown Source)
+	at ru.gold_farm_app.income_control.services.impl.EmployeeServiceImpl.add(EmployeeServiceImpl.java:21)
+	at ru.gold_farm_app.income_control.listeners.impl.EmployeeListenerImpl.onMessageCreate(EmployeeListenerImpl.java:28)
+	at org.javacord.core.util.event.EventDispatcher.lambda$dispatchMessageCreateEvent$122(EventDispatcher.java:4371)
+	at org.javacord.core.util.event.EventDispatcherBase.lambda$dispatchEvent$12(EventDispatcherBase.java:209)
+	at org.javacord.core.util.event.EventDispatcherBase.lambda$checkRunningListenersAndStartIfPossible$20(EventDispatcherBase.java:277)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:109)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3196)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3802)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:99)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:720)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:706)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy83.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:597)
+	at jdk.internal.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 17 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "uk_o713vnu3h8p41rw7bjybtqbm"
+  Подробности: Ключ "(discord_name)=(Begiç#4247)" уже существует.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:130)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 62 common frames omitted
+2021-10-30 20:00:48,554 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 7] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, Terocone=15, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 20:00:48,727 INFO ru.gold_farm_app.income_control.services.impl.EmployeeServiceImpl [Javacord - Central ExecutorService - 7] Before: 0
+2021-10-30 20:00:48,728 INFO ru.gold_farm_app.income_control.services.impl.EmployeeServiceImpl [Javacord - Central ExecutorService - 7] After: 11668932
+2021-10-30 20:00:48,844 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 7] Employee(id=2, discordName=Begiç#4247, gold=0, server=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=1, dreamingGlory=46, nightmareVine=83, manaThistle=15, nightmareSeed=5, felLotus=3, netherbloom=0, terocone=15, felIronOre=5, eterniumOre=9, adamantiteOre=161, khoriumOre=4, bloodGarnet=0, flameSpessarite=1, goldenDraenite=0, shadowDraenite=1, deepPeridot=0, azureMoonstone=0, dawnstone=0, nightseye=0, starOfElune=0, talasite=0, livingRuby=0, nobleTopaz=0, primalEarth=8, primalFire=5, primalMana=2, primalAir=0, primalLife=17, price=11668932, date=2021-10-30, employee=Employee(id=2, discordName=Begiç#4247, gold=0, server=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 22:11:16,846 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket error!
+com.neovisionaries.ws.client.WebSocketException: Flushing frames to the server failed: Connection or outbound has closed
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:434)
+	at com.neovisionaries.ws.client.WritingThread.sendFrames(WritingThread.java:384)
+	at com.neovisionaries.ws.client.WritingThread.main(WritingThread.java:108)
+	at com.neovisionaries.ws.client.WritingThread.runMain(WritingThread.java:55)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+Caused by: java.net.SocketException: Connection or outbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1189)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.neovisionaries.ws.client.WritingThread.flush(WritingThread.java:271)
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:422)
+	... 4 common frames omitted
+2021-10-30 22:11:16,866 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket error!
+com.neovisionaries.ws.client.WebSocketException: Flushing frames to the server failed: Connection or outbound has closed
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:434)
+	at com.neovisionaries.ws.client.WritingThread.sendFrames(WritingThread.java:384)
+	at com.neovisionaries.ws.client.WritingThread.main(WritingThread.java:120)
+	at com.neovisionaries.ws.client.WritingThread.runMain(WritingThread.java:55)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+Caused by: java.net.SocketException: Connection or outbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1189)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.neovisionaries.ws.client.WritingThread.flush(WritingThread.java:271)
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:422)
+	... 4 common frames omitted
+2021-10-30 22:11:16,905 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket closed with reason 'An I/O error occurred while a frame was being read from the web socket: Connection reset' and code VIOLATED (1008) by client!
+2021-10-30 22:11:16,938 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Trying to reconnect/resume in 1 seconds!
+2021-10-30 22:11:18,627 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Could not resume session. Reconnecting in 4.7 seconds...
+2021-10-30 22:11:23,136 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m9s57ms465µs400ns).
+2021-10-30 23:10:49,871 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket error!
+com.neovisionaries.ws.client.WebSocketException: Flushing frames to the server failed: Connection or outbound has closed
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:434)
+	at com.neovisionaries.ws.client.WritingThread.sendFrames(WritingThread.java:384)
+	at com.neovisionaries.ws.client.WritingThread.main(WritingThread.java:108)
+	at com.neovisionaries.ws.client.WritingThread.runMain(WritingThread.java:55)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+Caused by: java.net.SocketException: Connection or outbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1189)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.neovisionaries.ws.client.WritingThread.flush(WritingThread.java:271)
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:422)
+	... 4 common frames omitted
+2021-10-30 23:10:49,873 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket error!
+com.neovisionaries.ws.client.WebSocketException: Flushing frames to the server failed: Connection or outbound has closed
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:434)
+	at com.neovisionaries.ws.client.WritingThread.sendFrames(WritingThread.java:384)
+	at com.neovisionaries.ws.client.WritingThread.main(WritingThread.java:120)
+	at com.neovisionaries.ws.client.WritingThread.runMain(WritingThread.java:55)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+Caused by: java.net.SocketException: Connection or outbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1189)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.neovisionaries.ws.client.WritingThread.flush(WritingThread.java:271)
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:422)
+	... 4 common frames omitted
+2021-10-30 23:10:49,874 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket closed with reason 'An I/O error occurred while a frame was being read from the web socket: Connection reset' and code VIOLATED (1008) by client!
+2021-10-30 23:10:49,875 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Trying to reconnect/resume in 1 seconds!
+2021-10-30 23:10:51,536 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Could not resume session. Reconnecting in 1.4 seconds...
+2021-10-30 23:11:08,700 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m14s897ms821µs300ns).

@@ -17,14 +17,18 @@ public class EmployeeServiceImpl implements EmployeeService {
     private static final Logger logger = LoggerFactory.getLogger(EmployeeServiceImpl.class);
 
     @Override
-    public void add(Employee employee) {
-        employeeRepository.save(employee);
+    public Integer add(Employee employee) {
+        if (get(employee).isEmpty()) {
+            employeeRepository.save(employee);
+            return 1;
+        } else return 0;
+
     }
 
 
     @Override
     public Optional<Employee> get(Employee employee) {
-        return Optional.of(employeeRepository.getById(employee.getId()));
+        return Optional.of(employeeRepository.findByDiscordName(employee.getDiscordName()));
     }
 
     @Override

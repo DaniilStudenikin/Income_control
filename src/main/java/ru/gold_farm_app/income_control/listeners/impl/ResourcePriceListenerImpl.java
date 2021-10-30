@@ -14,11 +14,11 @@ public class ResourcePriceListenerImpl implements ResourcePriceListener {
 
     @Override
     public void onMessageCreate(MessageCreateEvent event) {
-        if (event.getMessageContent().equals("!priceAdd") && event.getMessageAuthor().getDisplayName().equals("fastrapier1")) {
+        if (event.getMessageContent().equals("!priceAdd") && event.getMessageAuthor().getDisplayName().equals("fastrapier")) {
             resourcePriceService.priceAdd();
             event.getChannel().sendMessage("All prices are updated!");
         }
-        if (event.getMessageContent().equals("!priceUpdate") && event.getMessageAuthor().getDisplayName().equals("fastrapier1")) {
+        if (event.getMessageContent().equals("!priceUpdate") && event.getMessageAuthor().getDisplayName().equals("fastrapier")) {
             resourcePriceService.updatePrice();
             event.getChannel().sendMessage("All prices are updated!");
         }
