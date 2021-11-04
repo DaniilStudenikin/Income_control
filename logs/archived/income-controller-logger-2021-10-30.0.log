@@ -1,0 +1,745 @@
+2021-10-30 13:20:56,457 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 9504 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 13:20:56,462 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 13:20:56,515 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 13:20:56,516 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 13:20:57,897 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 13:20:58,094 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 179 ms. Found 5 JPA repository interfaces.
+2021-10-30 13:20:59,532 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 13:20:59,548 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:20:59,549 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 13:20:59,550 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 13:20:59,705 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 13:20:59,705 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3189 ms
+2021-10-30 13:20:59,817 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 13:21:00,131 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 13:21:00,412 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 13:21:00,523 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 13:21:00,832 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 13:21:01,120 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 13:21:02,246 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 13:21:02,256 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:21:05,709 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 13:21:06,444 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 13:21:06,530 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 13:21:06,563 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:21:06,589 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 13:21:06,619 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 10.978 seconds (JVM running for 13.07)
+2021-10-30 13:21:31,635 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 13:21:32,066 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:21:32,073 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 13:21:32,088 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 13:21:40,112 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 4044 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 13:21:40,116 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 13:21:40,172 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 13:21:40,172 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 13:21:41,031 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 13:21:41,147 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 106 ms. Found 5 JPA repository interfaces.
+2021-10-30 13:21:42,035 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 13:21:42,048 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:21:42,049 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 13:21:42,049 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 13:21:42,198 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 13:21:42,199 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2025 ms
+2021-10-30 13:21:42,314 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 13:21:42,528 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 13:21:42,673 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 13:21:42,727 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 13:21:42,853 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 13:21:42,984 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 13:21:43,858 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 13:21:43,868 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:21:46,338 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 13:21:46,755 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 13:21:46,846 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 13:21:46,877 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:21:46,900 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 13:21:46,922 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 7.493 seconds (JVM running for 9.358)
+2021-10-30 13:22:12,978 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:22:13,277 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 2] Employee(id=1, discordName=fastrapier#2112, gold=29894721, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=58, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=29894721, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:22:20,508 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:22:20,584 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 3] Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=59, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:24:38,314 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 13:24:38,663 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:24:38,668 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 13:24:38,676 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 13:24:45,922 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 5904 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 13:24:45,925 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 13:24:45,977 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 13:24:45,977 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 13:24:46,844 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 13:24:46,963 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 109 ms. Found 5 JPA repository interfaces.
+2021-10-30 13:24:47,750 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 13:24:47,760 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:24:47,761 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 13:24:47,761 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 13:24:47,867 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 13:24:47,867 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1889 ms
+2021-10-30 13:24:47,966 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 13:24:48,136 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 13:24:48,253 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 13:24:48,303 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 13:24:48,503 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 13:24:48,631 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 13:24:49,383 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 13:24:49,394 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:24:51,866 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 13:24:52,218 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 13:24:52,288 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 13:24:52,326 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:24:52,345 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 13:24:52,361 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 7.074 seconds (JVM running for 8.832)
+2021-10-30 13:27:43,537 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 13:27:43,996 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:27:44,016 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 13:27:44,039 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 13:27:51,128 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 9544 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 13:27:51,131 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 13:27:51,182 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 13:27:51,182 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 13:27:52,018 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 13:27:52,130 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 102 ms. Found 5 JPA repository interfaces.
+2021-10-30 13:27:52,894 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 13:27:52,904 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:27:52,905 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 13:27:52,905 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 13:27:53,017 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 13:27:53,017 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1834 ms
+2021-10-30 13:27:53,111 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 13:27:53,307 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 13:27:53,449 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 13:27:53,499 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 13:27:53,627 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 13:27:53,772 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 13:27:54,581 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 13:27:54,597 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:27:57,177 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 13:27:57,552 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 13:27:57,622 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 13:27:57,665 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:27:57,694 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 13:27:57,712 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 7.26 seconds (JVM running for 9.034)
+2021-10-30 13:28:13,290 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:28:13,639 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 2] Employee(id=1, discordName=fastrapier#2112, gold=29894721, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=60, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=29894721, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:28:20,877 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:28:21,010 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 3] Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=61, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:29:08,846 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:29:08,945 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 2] Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=62, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:29:38,699 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 13:29:39,065 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:29:39,070 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 13:29:39,083 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 13:29:46,255 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 6336 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 13:29:46,258 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 13:29:46,303 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 13:29:46,304 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 13:29:47,069 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 13:29:47,161 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+2021-10-30 13:29:47,940 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 13:29:47,951 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:29:47,952 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 13:29:47,952 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 13:29:48,079 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 13:29:48,079 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1775 ms
+2021-10-30 13:29:48,181 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 13:29:48,369 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 13:29:48,520 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 13:29:48,581 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 13:29:48,717 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 13:29:48,833 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 13:29:49,653 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 13:29:49,665 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:29:51,983 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 13:29:52,329 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 13:29:52,400 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 13:29:52,431 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:29:52,468 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 13:29:52,491 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 6.854 seconds (JVM running for 8.719)
+2021-10-30 13:29:58,252 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:29:58,604 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 2] Employee(id=1, discordName=fastrapier#2112, gold=29894721, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=63, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=29894721, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:30:10,393 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:30:10,502 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 3] Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=64, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:32:15,409 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 4] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:32:15,502 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 4] Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=65, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:32:39,273 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 5] [FelLotus=3, DreamingGlory=29, NightmareVine=0, ManaThistle=5, NightmareSeed=0, Netherbloom=146, FelIronOre=0, EterniumOre=25, AdamantiteOre=171, KhoriumOre=9, BloodGarnet=0, FlameSpessarite=0, GoldenDraenite=0, ShadowDraenite=0, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=0, PrimalFire=0, PrimalLife=0, PrimalEarth=0, PrimalAir=0]
+2021-10-30 13:32:39,361 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 5] Employee(id=1, discordName=fastrapier#2112, gold=37498542, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=66, dreamingGlory=29, nightmareVine=0, manaThistle=5, nightmareSeed=0, felLotus=3, netherbloom=146, felIronOre=0, eterniumOre=25, adamantiteOre=171, khoriumOre=9, bloodGarnet=0, flameSpessarite=0, goldenDraenite=0, shadowDraenite=0, deepPeridot=0, azureMoonstone=0, dawnstone=0, nightseye=0, starOfElune=0, talasite=0, livingRuby=0, nobleTopaz=0, primalEarth=0, primalFire=0, primalMana=0, primalAir=0, primalLife=0, price=7603821, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=37498542, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:34:02,009 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 13:34:02,404 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:34:02,409 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 13:34:02,416 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 13:34:09,884 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 12616 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 13:34:09,887 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 13:34:09,944 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 13:34:09,944 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 13:34:10,727 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 13:34:10,834 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2021-10-30 13:34:11,641 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 13:34:11,653 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:34:11,654 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 13:34:11,654 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 13:34:11,772 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 13:34:11,772 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1827 ms
+2021-10-30 13:34:11,855 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 13:34:12,033 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 13:34:12,153 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 13:34:12,205 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 13:34:12,312 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 13:34:12,414 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 13:34:13,126 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 13:34:13,136 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:34:15,346 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 13:34:15,709 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 13:34:15,780 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 13:34:15,831 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:34:15,852 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 13:34:15,867 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 6.611 seconds (JVM running for 8.427)
+2021-10-30 13:40:36,569 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=3, DreamingGlory=29, NightmareVine=0, ManaThistle=5, NightmareSeed=0, Netherbloom=146, FelIronOre=0, EterniumOre=25, AdamantiteOre=171, KhoriumOre=9, BloodGarnet=0, FlameSpessarite=0, GoldenDraenite=0, ShadowDraenite=0, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=0, PrimalFire=0, PrimalLife=0, PrimalEarth=0, PrimalAir=0]
+2021-10-30 13:40:36,945 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 3] Employee(id=1, discordName=fastrapier#2112, gold=15207642, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=67, dreamingGlory=29, nightmareVine=0, manaThistle=5, nightmareSeed=0, felLotus=3, netherbloom=146, felIronOre=0, eterniumOre=25, adamantiteOre=171, khoriumOre=9, bloodGarnet=0, flameSpessarite=0, goldenDraenite=0, shadowDraenite=0, deepPeridot=0, azureMoonstone=0, dawnstone=0, nightseye=0, starOfElune=0, talasite=0, livingRuby=0, nobleTopaz=0, primalEarth=0, primalFire=0, primalMana=0, primalAir=0, primalLife=0, price=7603821, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=15207642, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:41:02,466 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 13:41:02,936 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:41:02,943 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 13:41:02,959 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 13:41:07,809 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 11828 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 13:41:07,813 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 13:41:07,859 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 13:41:07,859 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 13:41:08,626 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 13:41:08,738 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 103 ms. Found 5 JPA repository interfaces.
+2021-10-30 13:41:09,483 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 13:41:09,495 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:41:09,495 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 13:41:09,496 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 13:41:09,614 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 13:41:09,614 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1754 ms
+2021-10-30 13:41:09,710 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 13:41:09,898 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 13:41:10,031 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 13:41:10,085 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 13:41:10,211 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 13:41:10,342 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 13:41:11,038 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 13:41:11,050 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:41:13,424 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 13:41:13,832 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 13:41:13,902 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 13:41:13,930 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 13:41:13,963 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 13:41:13,980 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 6.82 seconds (JVM running for 8.66)
+2021-10-30 13:41:29,064 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:41:29,513 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 2] Employee(id=1, discordName=fastrapier#2112, gold=37498542, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=68, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=37498542, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:41:37,285 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 13:41:37,406 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 3] Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=69, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 13:45:13,070 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 13:45:13,588 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 13:45:13,593 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 13:45:13,612 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 16:10:55,423 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 5752 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 16:10:55,427 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 16:10:55,482 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 16:10:55,482 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 16:10:56,338 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 16:10:56,466 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 116 ms. Found 5 JPA repository interfaces.
+2021-10-30 16:10:57,298 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 16:10:57,310 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 16:10:57,310 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 16:10:57,311 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 16:10:57,432 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 16:10:57,433 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1950 ms
+2021-10-30 16:10:57,525 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 16:10:57,748 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 16:10:57,892 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 16:10:57,964 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 16:10:58,142 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 16:10:58,273 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 16:10:59,105 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 16:10:59,114 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 16:11:01,445 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 16:11:01,849 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 16:11:01,932 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 16:11:01,958 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 16:11:01,982 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 16:11:01,999 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 7.267 seconds (JVM running for 9.177)
+2021-10-30 16:28:21,516 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 16:28:21,867 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 3] Employee(id=1, discordName=fastrapier#2112, gold=0, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=70, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=0, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 16:28:26,133 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 4] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 16:28:26,307 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 4] Employee(id=1, discordName=fastrapier#2112, gold=29894721, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=71, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=29894721, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 16:28:30,282 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=5, DreamingGlory=40, NightmareVine=161, ManaThistle=41, NightmareSeed=6, Netherbloom=0, FelIronOre=0, EterniumOre=91, AdamantiteOre=687, KhoriumOre=45, BloodGarnet=7, FlameSpessarite=2, GoldenDraenite=3, ShadowDraenite=5, DeepPeridot=2, AzureMoonstone=3, Dawnstone=1, Nightseye=2, StarofElune=0, Talasite=2, LivingRuby=1, NobleTopaz=0, PrimalMana=1, PrimalFire=2, PrimalLife=2, PrimalEarth=47, PrimalAir=2]
+2021-10-30 16:28:30,384 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 3] Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=72, dreamingGlory=40, nightmareVine=161, manaThistle=41, nightmareSeed=6, felLotus=5, netherbloom=0, felIronOre=0, eterniumOre=91, adamantiteOre=687, khoriumOre=45, bloodGarnet=7, flameSpessarite=2, goldenDraenite=3, shadowDraenite=5, deepPeridot=2, azureMoonstone=3, dawnstone=1, nightseye=2, starOfElune=0, talasite=2, livingRuby=1, nobleTopaz=0, primalEarth=47, primalFire=2, primalMana=1, primalAir=2, primalLife=2, price=29894721, date=2021-10-30, employee=Employee(id=1, discordName=fastrapier#2112, gold=59789442, serverFraction=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 18:57:50,720 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 18:57:51,016 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 18:57:51,049 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 18:57:51,061 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 19:07:09,805 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 12040 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:07:09,808 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:07:09,865 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:07:09,865 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:07:10,754 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:07:10,860 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 96 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:07:11,677 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 19:07:11,688 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 19:07:11,689 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:07:11,689 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:07:11,807 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:07:11,807 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1941 ms
+2021-10-30 19:07:12,004 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 19:07:12,063 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 19:07:12,212 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 19:07:12,326 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 19:07:12,535 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 19:07:12,558 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 19:07:13,447 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 19:07:13,458 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:07:15,818 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 19:07:16,189 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 19:07:16,377 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 19:07:16,417 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 19:07:16,438 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 19:07:16,455 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 7.244 seconds (JVM running for 9.326)
+2021-10-30 19:09:04,839 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 19:09:05,145 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:09:05,150 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 19:09:05,162 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 19:10:10,474 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 6772 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:10:10,478 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:10:10,527 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:10:10,528 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:10:11,270 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:10:11,371 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 92 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:10:12,282 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 19:10:12,298 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 19:10:12,299 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:10:12,299 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:10:12,431 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:10:12,432 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1902 ms
+2021-10-30 19:10:12,535 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 19:10:12,719 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 19:10:12,861 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 19:10:12,917 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 19:10:13,099 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 19:10:13,267 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 19:10:14,092 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,093 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "employee" не существует, пропускается
+2021-10-30 19:10:14,094 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,094 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "for_sale" не существует, пропускается
+2021-10-30 19:10:14,095 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,095 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "resource_price" не существует, пропускается
+2021-10-30 19:10:14,096 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,096 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "resource_price" не существует, пропускается
+2021-10-30 19:10:14,098 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,098 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "employee" не существует, пропускается
+2021-10-30 19:10:14,098 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,098 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "for_sale" не существует, пропускается
+2021-10-30 19:10:14,099 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,099 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "resource" не существует, пропускается
+2021-10-30 19:10:14,100 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,100 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "resource_price" не существует, пропускается
+2021-10-30 19:10:14,101 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:10:14,102 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "server" не существует, пропускается
+2021-10-30 19:10:14,189 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 19:10:14,200 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:10:16,636 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 19:10:17,030 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 19:10:17,119 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 19:10:17,176 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 19:10:17,198 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 19:10:17,215 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 7.496 seconds (JVM running for 9.496)
+2021-10-30 19:15:18,023 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 19:15:18,572 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:15:18,573 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-30 19:15:18,615 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 19:15:18,623 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 19:15:27,367 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 2304 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:15:27,370 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:15:27,417 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:15:27,417 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:15:28,188 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:15:28,300 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 104 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:15:29,058 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 19:15:29,068 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 19:15:29,069 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:15:29,069 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:15:29,188 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:15:29,188 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1770 ms
+2021-10-30 19:15:29,288 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 19:15:29,478 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 19:15:29,595 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 19:15:29,653 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 19:15:29,781 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 19:15:29,887 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 19:15:30,598 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,598 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "employee" не существует, пропускается
+2021-10-30 19:15:30,599 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,599 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "for_sale" не существует, пропускается
+2021-10-30 19:15:30,600 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,600 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "resource_price" не существует, пропускается
+2021-10-30 19:15:30,601 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,601 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "resource_price" не существует, пропускается
+2021-10-30 19:15:30,603 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,603 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "employee" не существует, пропускается
+2021-10-30 19:15:30,603 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,603 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "for_sale" не существует, пропускается
+2021-10-30 19:15:30,604 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,604 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "resource" не существует, пропускается
+2021-10-30 19:15:30,605 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,605 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "resource_price" не существует, пропускается
+2021-10-30 19:15:30,605 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:15:30,605 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "server" не существует, пропускается
+2021-10-30 19:15:30,680 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 19:15:30,689 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:15:33,038 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 19:15:33,385 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 19:15:33,452 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 19:15:33,490 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 19:15:33,513 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 19:15:33,532 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 6.798 seconds (JVM running for 8.819)
+2021-10-30 19:21:54,922 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 19:21:55,198 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:21:55,199 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-30 19:21:55,237 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 19:21:55,245 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 19:22:07,247 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 6016 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:22:07,249 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:22:07,303 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:22:07,304 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:22:08,100 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:22:08,210 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 101 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:22:08,989 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 7030 (http)
+2021-10-30 19:22:08,999 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7030"]
+2021-10-30 19:22:09,000 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:22:09,000 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:22:09,120 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:22:09,120 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1816 ms
+2021-10-30 19:22:09,213 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 19:22:09,390 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 19:22:09,504 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 19:22:09,557 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 19:22:09,693 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 19:22:09,812 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-30 19:22:10,517 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,518 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "employee" не существует, пропускается
+2021-10-30 19:22:10,519 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,519 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "for_sale" не существует, пропускается
+2021-10-30 19:22:10,520 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,520 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "resource_price" не существует, пропускается
+2021-10-30 19:22:10,520 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,520 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] отношение "resource_price" не существует, пропускается
+2021-10-30 19:22:10,522 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,522 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "employee" не существует, пропускается
+2021-10-30 19:22:10,522 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,523 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "for_sale" не существует, пропускается
+2021-10-30 19:22:10,523 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,523 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "resource" не существует, пропускается
+2021-10-30 19:22:10,524 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,524 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "resource_price" не существует, пропускается
+2021-10-30 19:22:10,525 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-10-30 19:22:10,525 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [restartedMain] таблица "server" не существует, пропускается
+2021-10-30 19:22:10,602 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 19:22:10,611 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:22:12,909 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 19:22:13,275 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 19:22:13,358 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 19:22:13,403 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7030"]
+2021-10-30 19:22:13,430 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 7030 (http) with context path ''
+2021-10-30 19:22:13,446 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 6.843 seconds (JVM running for 8.41)
+2021-10-30 19:47:23,357 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 4] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:50:28,899 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 19:50:29,152 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:50:29,158 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 19:50:29,169 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 19:50:34,124 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 10976 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:50:34,127 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:50:34,186 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:50:34,187 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:50:34,945 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:50:35,040 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 85 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:50:35,767 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-10-30 19:50:35,777 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:50:35,777 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:50:35,778 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:50:35,876 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:50:35,876 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1688 ms
+2021-10-30 19:50:35,942 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-10-30 19:50:35,945 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-10-30 19:50:35,963 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-30 19:50:35,986 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-10-30 19:51:56,111 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 8816 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:51:56,114 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:51:56,178 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:51:56,178 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:51:57,067 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:51:57,197 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 119 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:51:58,059 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-10-30 19:51:58,073 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:51:58,074 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:51:58,074 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:51:58,219 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:51:58,219 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2040 ms
+2021-10-30 19:51:58,291 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-10-30 19:51:58,294 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2021-10-30 19:51:58,315 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-30 19:51:58,348 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-10-30 19:52:31,165 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 4228 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:52:31,168 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:52:31,213 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:52:31,214 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:52:31,955 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:52:32,083 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 108 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:52:33,256 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-10-30 19:52:33,311 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:52:33,313 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:52:33,314 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:52:33,505 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:52:33,506 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2292 ms
+2021-10-30 19:52:33,703 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 19:52:33,938 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 19:52:34,134 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 19:52:34,196 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 19:52:34,361 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 19:52:34,483 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-30 19:52:35,462 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 19:52:35,471 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:52:38,045 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 19:52:38,516 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 19:52:38,605 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 19:52:38,637 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:52:38,662 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-30 19:52:38,680 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 8.137 seconds (JVM running for 9.788)
+2021-10-30 19:53:29,519 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:53:59,627 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 3] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:55:32,841 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Websocket closed with reason 'unknown' and code NORMAL (1000) by client!
+2021-10-30 19:55:33,535 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:55:33,545 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-30 19:55:33,560 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-30 19:55:40,518 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting IncomeControlApplication using Java 11.0.12 on DESKTOP-GB4C3CT with PID 13796 (C:\Users\Fastrapier\Desktop\Income_control\target\classes started by Fastrapier in C:\Users\Fastrapier\Desktop\Income_control)
+2021-10-30 19:55:40,521 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-30 19:55:40,576 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-30 19:55:40,576 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-30 19:55:41,327 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-30 19:55:41,423 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+2021-10-30 19:55:42,168 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-10-30 19:55:42,177 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:55:42,178 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-10-30 19:55:42,178 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-30 19:55:42,291 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-30 19:55:42,292 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1715 ms
+2021-10-30 19:55:42,372 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-10-30 19:55:42,546 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-10-30 19:55:42,658 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-30 19:55:42,705 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-30 19:55:42,843 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-30 19:55:42,962 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-30 19:55:43,656 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-30 19:55:43,665 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-30 19:55:46,265 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-30 19:55:46,694 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [restartedMain] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-10-30 19:55:46,793 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-10-30 19:55:46,829 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-10-30 19:55:46,859 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-30 19:55:46,882 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started IncomeControlApplication in 7.026 seconds (JVM running for 8.821)
+2021-10-30 19:56:02,547 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [Javacord - Central Scheduler - 1] Detected a listener thread for Farmers which is now running for over 10 seconds (10016 ms). This is a very unusually long execution time for a listener task. Make sure to not do any heavy computations in listener threads!
+2021-10-30 19:56:31,142 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 1] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:58:08,520 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 2] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 19:59:08,622 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Javacord - Central ExecutorService - 5] SQL Error: 0, SQLState: 23505
+2021-10-30 19:59:08,623 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [Javacord - Central ExecutorService - 5] ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "uk_o713vnu3h8p41rw7bjybtqbm"
+  Подробности: Ключ "(discord_name)=(Begiç#4247)" уже существует.
+2021-10-30 19:59:08,637 ERROR org.javacord.core.util.logging.PrivacyProtectionLogger [Javacord - Central ExecutorService - 5] Unhandled exception in a listener thread for Farmers!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:276)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy88.save(Unknown Source)
+	at ru.gold_farm_app.income_control.services.impl.EmployeeServiceImpl.add(EmployeeServiceImpl.java:21)
+	at ru.gold_farm_app.income_control.listeners.impl.EmployeeListenerImpl.onMessageCreate(EmployeeListenerImpl.java:28)
+	at org.javacord.core.util.event.EventDispatcher.lambda$dispatchMessageCreateEvent$122(EventDispatcher.java:4371)
+	at org.javacord.core.util.event.EventDispatcherBase.lambda$dispatchEvent$12(EventDispatcherBase.java:209)
+	at org.javacord.core.util.event.EventDispatcherBase.lambda$checkRunningListenersAndStartIfPossible$20(EventDispatcherBase.java:277)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:109)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3196)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3802)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:99)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:720)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:706)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy83.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:597)
+	at jdk.internal.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 17 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "uk_o713vnu3h8p41rw7bjybtqbm"
+  Подробности: Ключ "(discord_name)=(Begiç#4247)" уже существует.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:130)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	... 62 common frames omitted
+2021-10-30 20:00:48,554 INFO ru.gold_farm_app.income_control.listeners.impl.ForSaleListenerImpl [Javacord - Central ExecutorService - 7] [FelLotus=3, DreamingGlory=46, NightmareVine=83, ManaThistle=15, NightmareSeed=5, Netherbloom=0, Terocone=15, FelIronOre=5, EterniumOre=9, AdamantiteOre=161, KhoriumOre=4, BloodGarnet=0, FlameSpessarite=1, GoldenDraenite=0, ShadowDraenite=1, DeepPeridot=0, AzureMoonstone=0, Dawnstone=0, Nightseye=0, StarofElune=0, Talasite=0, LivingRuby=0, NobleTopaz=0, PrimalMana=2, PrimalFire=5, PrimalLife=17, PrimalEarth=8, PrimalAir=0]
+2021-10-30 20:00:48,727 INFO ru.gold_farm_app.income_control.services.impl.EmployeeServiceImpl [Javacord - Central ExecutorService - 7] Before: 0
+2021-10-30 20:00:48,728 INFO ru.gold_farm_app.income_control.services.impl.EmployeeServiceImpl [Javacord - Central ExecutorService - 7] After: 11668932
+2021-10-30 20:00:48,844 INFO ru.gold_farm_app.income_control.services.impl.ForSaleServiceImpl [Javacord - Central ExecutorService - 7] Employee(id=2, discordName=Begiç#4247, gold=0, server=ServerFraction(id=1, serverFraction=gehennas-alliance))///ForSale(id=1, dreamingGlory=46, nightmareVine=83, manaThistle=15, nightmareSeed=5, felLotus=3, netherbloom=0, terocone=15, felIronOre=5, eterniumOre=9, adamantiteOre=161, khoriumOre=4, bloodGarnet=0, flameSpessarite=1, goldenDraenite=0, shadowDraenite=1, deepPeridot=0, azureMoonstone=0, dawnstone=0, nightseye=0, starOfElune=0, talasite=0, livingRuby=0, nobleTopaz=0, primalEarth=8, primalFire=5, primalMana=2, primalAir=0, primalLife=17, price=11668932, date=2021-10-30, employee=Employee(id=2, discordName=Begiç#4247, gold=0, server=ServerFraction(id=1, serverFraction=gehennas-alliance)))
+2021-10-30 22:11:16,846 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket error!
+com.neovisionaries.ws.client.WebSocketException: Flushing frames to the server failed: Connection or outbound has closed
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:434)
+	at com.neovisionaries.ws.client.WritingThread.sendFrames(WritingThread.java:384)
+	at com.neovisionaries.ws.client.WritingThread.main(WritingThread.java:108)
+	at com.neovisionaries.ws.client.WritingThread.runMain(WritingThread.java:55)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+Caused by: java.net.SocketException: Connection or outbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1189)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.neovisionaries.ws.client.WritingThread.flush(WritingThread.java:271)
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:422)
+	... 4 common frames omitted
+2021-10-30 22:11:16,866 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket error!
+com.neovisionaries.ws.client.WebSocketException: Flushing frames to the server failed: Connection or outbound has closed
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:434)
+	at com.neovisionaries.ws.client.WritingThread.sendFrames(WritingThread.java:384)
+	at com.neovisionaries.ws.client.WritingThread.main(WritingThread.java:120)
+	at com.neovisionaries.ws.client.WritingThread.runMain(WritingThread.java:55)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+Caused by: java.net.SocketException: Connection or outbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1189)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.neovisionaries.ws.client.WritingThread.flush(WritingThread.java:271)
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:422)
+	... 4 common frames omitted
+2021-10-30 22:11:16,905 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket closed with reason 'An I/O error occurred while a frame was being read from the web socket: Connection reset' and code VIOLATED (1008) by client!
+2021-10-30 22:11:16,938 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Trying to reconnect/resume in 1 seconds!
+2021-10-30 22:11:18,627 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Could not resume session. Reconnecting in 4.7 seconds...
+2021-10-30 22:11:23,136 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m9s57ms465µs400ns).
+2021-10-30 23:10:49,871 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket error!
+com.neovisionaries.ws.client.WebSocketException: Flushing frames to the server failed: Connection or outbound has closed
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:434)
+	at com.neovisionaries.ws.client.WritingThread.sendFrames(WritingThread.java:384)
+	at com.neovisionaries.ws.client.WritingThread.main(WritingThread.java:108)
+	at com.neovisionaries.ws.client.WritingThread.runMain(WritingThread.java:55)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+Caused by: java.net.SocketException: Connection or outbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1189)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.neovisionaries.ws.client.WritingThread.flush(WritingThread.java:271)
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:422)
+	... 4 common frames omitted
+2021-10-30 23:10:49,873 WARN org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket error!
+com.neovisionaries.ws.client.WebSocketException: Flushing frames to the server failed: Connection or outbound has closed
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:434)
+	at com.neovisionaries.ws.client.WritingThread.sendFrames(WritingThread.java:384)
+	at com.neovisionaries.ws.client.WritingThread.main(WritingThread.java:120)
+	at com.neovisionaries.ws.client.WritingThread.runMain(WritingThread.java:55)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+Caused by: java.net.SocketException: Connection or outbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1189)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.neovisionaries.ws.client.WritingThread.flush(WritingThread.java:271)
+	at com.neovisionaries.ws.client.WritingThread.doFlush(WritingThread.java:422)
+	... 4 common frames omitted
+2021-10-30 23:10:49,874 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Websocket closed with reason 'An I/O error occurred while a frame was being read from the web socket: Connection reset' and code VIOLATED (1008) by client!
+2021-10-30 23:10:49,875 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [WritingThread] Trying to reconnect/resume in 1 seconds!
+2021-10-30 23:10:51,536 INFO org.javacord.core.util.logging.PrivacyProtectionLogger [ReadingThread] Could not resume session. Reconnecting in 1.4 seconds...
+2021-10-30 23:11:08,700 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m14s897ms821µs300ns).

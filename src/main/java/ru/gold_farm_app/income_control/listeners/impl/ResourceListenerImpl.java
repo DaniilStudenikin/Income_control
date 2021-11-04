@@ -19,7 +19,7 @@ public class ResourceListenerImpl implements ResourceListener {
 
     @Override
     public void onMessageCreate(MessageCreateEvent event) {
-        if (event.getMessageContent().equals("!resources") && event.getMessageAuthor().getDisplayName().equals("fastrapier1")) {
+        if (event.getMessageContent().equals("!resources") && event.getMessageAuthor().getDisplayName().equals("fastrapier")) {
             List<Resource> resources = resourceRepository.findAll();
             for (Resource res : resources) {
                 new MessageBuilder().append("Name = " + res.getName() + ".")
