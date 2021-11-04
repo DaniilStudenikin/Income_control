@@ -28,7 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Optional<Employee> get(Employee employee) {
-        return Optional.of(employeeRepository.findByDiscordName(employee.getDiscordName()));
+        return Optional.ofNullable(employeeRepository.findByDiscordName(employee.getDiscordName()));
     }
 
     @Override

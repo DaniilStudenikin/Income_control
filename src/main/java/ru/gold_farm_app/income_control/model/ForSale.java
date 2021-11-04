@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class ForSale {
 
     @Id
-    @Column
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     //Herbs

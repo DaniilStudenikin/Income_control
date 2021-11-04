@@ -1,3 +1,8 @@
+create table if not exists hibernate_sequence
+(
+    next_val bigint null
+);
+
 create table if not exists resource
 (
     id          bigint       not null
@@ -30,7 +35,7 @@ create table if not exists employee
 
 create table if not exists for_sale
 (
-    id              bigint not null
+    id               bigint not null
         primary key,
     dreamingGlory   int    null,
     nightmareVine   int    null,

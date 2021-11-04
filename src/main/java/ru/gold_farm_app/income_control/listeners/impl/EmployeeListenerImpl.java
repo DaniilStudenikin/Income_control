@@ -24,6 +24,7 @@ public class EmployeeListenerImpl implements EmployeeListener {
             try {
                 ServerFraction server = serverFractionRepository
                         .findByServerFraction(event.getMessageContent().replace(" ", "").substring(5)).orElseThrow(IllegalArgumentException::new);
+
                 int num = employeeService.add(Employee.builder()
                         .discordName(event.getMessageAuthor().getDiscriminatedName())
                         .server(server)

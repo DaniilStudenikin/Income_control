@@ -16,7 +16,7 @@ import java.util.List;
 @Table(name = "server")
 public class ServerFraction {
     @Id
-    @Column
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String serverFraction;

@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Entity
 public class ResourcePrice {
     @Id
-    @Column
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @OneToOne

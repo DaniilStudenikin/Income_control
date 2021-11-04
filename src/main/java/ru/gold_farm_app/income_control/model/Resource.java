@@ -16,7 +16,7 @@ import java.net.URL;
 @Entity
 public class Resource {
     @Id
-    @Column
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;
