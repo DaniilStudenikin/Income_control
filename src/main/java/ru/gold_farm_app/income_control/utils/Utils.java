@@ -42,7 +42,8 @@ public class Utils {
     @Bean
     @ConfigurationProperties(value = "discord-api")
     public DiscordApi discordApi() {
-        String token = env.getProperty("TOKEN");
+
+        String token = "ODkxNTU3MTg0NjI0ODIwMjI2.YVAFVQ.Aino2ZKWIInTF_qwKn4cDjgjkTI";
         return new DiscordApiBuilder().setToken(token)
                 .addMessageCreateListener(serverFractionListener)
                 .addMessageCreateListener(resourceListener)
