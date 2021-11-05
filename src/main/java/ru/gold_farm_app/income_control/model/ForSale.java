@@ -13,6 +13,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder
 @Entity
+
 public class ForSale {
 
     @Id

@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.gold_farm_app.income_control.model.*;
 import ru.gold_farm_app.income_control.repository.EmployeeRepository;
 import ru.gold_farm_app.income_control.repository.ForSaleRepository;
@@ -35,6 +36,7 @@ public class ForSaleServiceImpl implements ForSaleService {
     private EmployeeService employeeService;
 
     @Override
+    @Transactional
     public ForSale createForSale(List<String[]> forSaleList, String discordName) {
         Employee employee = employeeRepository.findByDiscordName(discordName);
         ForSale forSale = from(forSaleList);

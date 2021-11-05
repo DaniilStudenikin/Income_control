@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.gold_farm_app.income_control.model.Resource;
 import ru.gold_farm_app.income_control.model.ResourcePrice;
 import ru.gold_farm_app.income_control.model.ServerFraction;
@@ -57,8 +58,9 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
         }
     }
 
-        @Scheduled(initialDelay = 1000*60*60*2,fixedDelay = 1000*60*60*2)
+    @Scheduled(initialDelay = 1000 * 60 * 60 * 2, fixedDelay = 1000 * 60 * 60 * 2)
     @Override
+    @Transactional
     public void updatePrice() {
         System.out.println("START UPDATING");
         List<ResourcePrice> resourcePrices = resourcePriceRepository.findAll();

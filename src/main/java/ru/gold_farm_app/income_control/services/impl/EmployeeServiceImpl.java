@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.gold_farm_app.income_control.model.Employee;
 import ru.gold_farm_app.income_control.repository.EmployeeRepository;
 import ru.gold_farm_app.income_control.services.EmployeeService;
@@ -17,6 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private static final Logger logger = LoggerFactory.getLogger(EmployeeServiceImpl.class);
 
     @Override
+    @Transactional
     public Integer add(Employee employee) {
         if (get(employee).isEmpty()) {
             employeeRepository.save(employee);
