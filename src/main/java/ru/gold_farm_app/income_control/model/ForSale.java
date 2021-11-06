@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -86,7 +87,7 @@ public class ForSale {
     //other
     private Long price;
 
-    private LocalDate date;
+    private LocalDateTime date;
 
     @ManyToOne
     private Employee employee;

@@ -15,6 +15,7 @@ import ru.gold_farm_app.income_control.services.EmployeeService;
 import ru.gold_farm_app.income_control.services.ForSaleService;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -54,7 +55,7 @@ public class ForSaleServiceImpl implements ForSaleService {
     //creating object ForSale from resourceList which is String array
     private ForSale from(List<String[]> forSaleResourceList) {
         ForSale forSale = new ForSale();
-        forSale.setDate(LocalDate.now());
+        forSale.setDate(LocalDateTime.now());
         for (int i = 0; i < 28; i++) {
             String[] s = forSaleResourceList.get(i);
             int amount = anInt(s);
