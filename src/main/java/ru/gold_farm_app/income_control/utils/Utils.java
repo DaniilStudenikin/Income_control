@@ -43,7 +43,7 @@ public class Utils {
     @ConfigurationProperties(value = "discord-api")
     public DiscordApi discordApi() {
 
-        String token = "ODkxNTU3MTg0NjI0ODIwMjI2.YVAFVQ.Aino2ZKWIInTF_qwKn4cDjgjkTI";
+        String token = "ODkxNTU3MTg0NjI0ODIwMjI2.YVAFVQ.K_2LaoemQ4KjBsJOyOQ2L28N8IQ";
         return new DiscordApiBuilder().setToken(token)
                 .addMessageCreateListener(serverFractionListener)
                 .addMessageCreateListener(resourceListener)
