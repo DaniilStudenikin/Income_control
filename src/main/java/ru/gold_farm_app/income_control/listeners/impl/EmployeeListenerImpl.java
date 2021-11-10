@@ -31,6 +31,7 @@ public class EmployeeListenerImpl implements EmployeeListener {
                         .gold(0L)
                         .build());
                 if (num == 1) {
+
                     new MessageBuilder()
                             .append("You are with us! Dear " + event.getMessageAuthor().getDisplayName() + "!\n")
                             .append("Your server is " + server.getServerFraction() + "!")

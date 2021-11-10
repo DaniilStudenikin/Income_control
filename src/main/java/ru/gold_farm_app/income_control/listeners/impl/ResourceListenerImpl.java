@@ -26,5 +26,6 @@ public class ResourceListenerImpl implements ResourceListener {
                         .addAttachment(res.getIcon()).send(event.getChannel());
             }
         }
+
     }
 }

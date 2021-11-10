@@ -1,6 +1,7 @@
 package ru.gold_farm_app.income_control.services.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.javacord.api.event.message.MessageCreateEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -8,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import ru.gold_farm_app.income_control.model.Resource;
 import ru.gold_farm_app.income_control.model.ResourcePrice;
 import ru.gold_farm_app.income_control.model.ServerFraction;
+import ru.gold_farm_app.income_control.repository.EmployeeRepository;
 import ru.gold_farm_app.income_control.repository.ResourcePriceRepository;
 import ru.gold_farm_app.income_control.repository.ResourceRepository;
 import ru.gold_farm_app.income_control.repository.ServerFractionRepository;
@@ -17,6 +19,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -25,6 +28,8 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
     @Autowired
     private ResourceRepository resourceRepository;
 
+    @Autowired
+    private EmployeeRepository employeeRepository;
     @Autowired
     private ResourcePriceRepository resourcePriceRepository;
 
@@ -78,4 +83,16 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
             }
         }
     }
+
+    @Override
+    public List<ResourcePrice> resourcePrices(MessageCreateEvent event) {
+        List<Resource> resourceList = resourceRepository.findAll();
+        List<ResourcePrice> resourcePrices = new ArrayList<>();
+        for (Resource resource : resourceList) {
+            resourcePrices.add(resourcePriceRepository.findByResourceAndServer(resource, employeeRepository.findByDiscordName(event.getMessageAuthor().getDiscriminatedName()).getServer())
+                    .orElseThrow(IllegalArgumentException::new));
+        }
+        return resourcePrices;
+    }
+
 }
