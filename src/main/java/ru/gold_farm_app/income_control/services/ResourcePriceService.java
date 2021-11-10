@@ -11,4 +11,6 @@ public interface ResourcePriceService {
     void updatePrice();
 
     List<ResourcePrice> resourcePrices(MessageCreateEvent event);
+
+    List<ResourcePrice> resourcePricesByServer(MessageCreateEvent event, Long server);
 }

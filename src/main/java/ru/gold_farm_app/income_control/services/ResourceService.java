@@ -8,4 +8,6 @@ public interface ResourceService {
     void add(Long itemId);
 
     void delete(Long itemId);
+
+    List<Resource> findAll();
 }

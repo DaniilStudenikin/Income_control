@@ -16,13 +16,13 @@ public class ServerFractionListenerImpl implements ServerFractionListener {
     @Override
     public void onMessageCreate(MessageCreateEvent messageCreateEvent) {
         if (messageCreateEvent.getMessageContent().startsWith("!server_add") &&
-                messageCreateEvent.getMessageAuthor().getDisplayName().equals("fastrapier1")) {
+                messageCreateEvent.getMessageAuthor().getDisplayName().equals("fastrapier")) {
             String server = messageCreateEvent.getMessageContent().replace(" ", "").substring(11);
             service.addServer(server);
             messageCreateEvent.getChannel().sendMessage("Server " + server + " added!");
         }
         if (messageCreateEvent.getMessageContent().startsWith("!server_delete") &&
-                messageCreateEvent.getMessageAuthor().getDisplayName().equals("fastrapier1")) {
+                messageCreateEvent.getMessageAuthor().getDisplayName().equals("fastrapier")) {
             String server = messageCreateEvent.getMessageContent().replace(" ", "").substring(14);
             service.deleteServer(server);
             messageCreateEvent.getChannel().sendMessage("Server " + server + " deleted!");

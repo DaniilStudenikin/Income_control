@@ -29,12 +29,6 @@ public class ResourceServiceImpl implements ResourceService {
     @Autowired
     private ResourceRepository resourceRepository;
 
-    @Autowired
-    private ServerFractionService serverFractionService;
-
-    @Autowired
-    private ObjectMapper objectMapper;
-
 
     @Override
     public void add(Long itemId) {
@@ -44,5 +38,10 @@ public class ResourceServiceImpl implements ResourceService {
     @Override
     public void delete(Long itemId) {
 
+    }
+
+    @Override
+    public List<Resource> findAll() {
+        return resourceRepository.findAll();
     }
 }

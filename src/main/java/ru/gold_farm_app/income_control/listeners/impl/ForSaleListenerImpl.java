@@ -21,7 +21,7 @@ public class ForSaleListenerImpl implements ForSaleListener {
     private ForSaleService forSaleService;
 
     private static final Logger logger = LoggerFactory.getLogger(ForSaleListenerImpl.class);
-    
+
     @Override
     public void onMessageCreate(MessageCreateEvent event) {
         if (event.getMessageContent().startsWith("!forSale")) {
@@ -48,7 +48,7 @@ public class ForSaleListenerImpl implements ForSaleListener {
 
     private void createForSale(List<String[]> forSaleResourcesList, MessageCreateEvent event) {
         ForSale forSale = forSaleService.createForSale(forSaleResourcesList, event.getMessageAuthor().getDiscriminatedName());
-        ///
+        // Presenting price in 000g 000s 000c format
         var g = forSale.getPrice() / 10000;
         var s = forSale.getPrice() / 100 % 100;
         var c = forSale.getPrice() % 100;

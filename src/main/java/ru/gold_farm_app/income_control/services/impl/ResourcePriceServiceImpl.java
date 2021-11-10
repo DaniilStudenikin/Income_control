@@ -16,7 +16,6 @@ import ru.gold_farm_app.income_control.repository.ServerFractionRepository;
 import ru.gold_farm_app.income_control.services.ResourcePriceService;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -91,6 +90,18 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
         for (Resource resource : resourceList) {
             resourcePrices.add(resourcePriceRepository.findByResourceAndServer(resource, employeeRepository.findByDiscordName(event.getMessageAuthor().getDiscriminatedName()).getServer())
                     .orElseThrow(IllegalArgumentException::new));
+        }
+        return resourcePrices;
+    }
+
+    @Override
+    public List<ResourcePrice> resourcePricesByServer(MessageCreateEvent event, Long server) {
+        List<Resource> resourceList = resourceRepository.findAll();
+        List<ResourcePrice> resourcePrices = new ArrayList<>();
+        for (Resource resource : resourceList) {
+            resourcePrices.add(resourcePriceRepository
+                    .findByResourceAndServer(resource, serverFractionRepository.findById(server)
+                            .orElseThrow(IllegalArgumentException::new)).orElseThrow(IllegalArgumentException::new));
         }
         return resourcePrices;
     }
