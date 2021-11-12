@@ -53,14 +53,15 @@ public class ForSaleServiceImpl implements ForSaleService {
     }
 
     @Override
-    public void delete(Long id, MessageCreateEvent event) {
-        Employee employee = employeeRepository.findByDiscordName(event.getMessageAuthor().getDiscriminatedName());
+    @Transactional
+    public void delete(Long id) {
         ForSale forSale = forSaleRepository.findById(id).orElseThrow(IllegalArgumentException::new);
+        Employee employee = employeeRepository.findByDiscordName(forSale.getEmployee().getDiscordName());
         logger.info(forSale.toString());
         logger.info("Before delete: " + employee.getGold());
         employee.setGold(employee.getGold() - forSale.getPrice());
         logger.info("After delete: " + employee.getGold());
-        forSaleRepository.delete(forSale);
+        forSaleRepository.deleteById(id);
         logger.info("ForSale with id=" + forSale.getId() + " and created by " + employee.getDiscordName() + " at " + forSale.getDate() + " successful deleted!");
     }
 

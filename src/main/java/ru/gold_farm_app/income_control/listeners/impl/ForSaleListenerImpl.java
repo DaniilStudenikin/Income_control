@@ -46,12 +46,14 @@ public class ForSaleListenerImpl implements ForSaleListener {
             }
         }
         //Надо придумать паттерн чисел для бесконечного количества айдишников
-        if (Pattern.matches("!delete-for-sale \\d", event.getMessageContent())
+        if (event.getMessageAuthor().getDisplayName().equals("fastrapier")
+                && (Pattern.matches("!delete-for-sale \\d", event.getMessageContent())
                 || Pattern.matches("!delete-for-sale \\d\\d", event.getMessageContent())
-                || Pattern.matches("!delete-for-sale \\d\\d\\d", event.getMessageContent())) {
+                || Pattern.matches("!delete-for-sale \\d\\d\\d", event.getMessageContent()))) {
             Long id = Long.valueOf(event.getMessageContent().replace(" ", "").substring(17));
             try {
-                forSaleService.delete(id, event);
+                forSaleService.delete(id);
+                event.getChannel().sendMessage("For Sale с id=" + id + " удален.");
             } catch (IllegalArgumentException e) {
                 event.getChannel().sendMessage("Список на продажу с таким id не существует. Попробуйте еще раз.");
             }

@@ -9,6 +9,6 @@ public interface ForSaleService {
 
     ForSale createForSale(List<String[]> forSale, String discordName);
 
-    void delete(Long id, MessageCreateEvent event);
+    void delete(Long id);
 
 }
