@@ -50,7 +50,7 @@ public class ForSaleListenerImpl implements ForSaleListener {
                 && (Pattern.matches("!delete-for-sale \\d", event.getMessageContent())
                 || Pattern.matches("!delete-for-sale \\d\\d", event.getMessageContent())
                 || Pattern.matches("!delete-for-sale \\d\\d\\d", event.getMessageContent()))) {
-            Long id = Long.valueOf(event.getMessageContent().replace(" ", "").substring(17));
+            Long id = Long.valueOf(event.getMessageContent().replace(" ", "").substring(16));
             try {
                 forSaleService.delete(id);
                 event.getChannel().sendMessage("For Sale с id=" + id + " удален.");
