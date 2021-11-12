@@ -36,9 +36,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void addIncome(String discordName, Long gold) {
         Employee employee = employeeRepository.findByDiscordName(discordName);
-        logger.info("Before: " + employee.getGold());
+        logger.info("Before adding income: " + employee.getGold());
         employee.setGold(gold + employee.getGold());
-        logger.info("After: " + employee.getGold());
+        logger.info("After adding income: " + employee.getGold());
         employeeRepository.save(employee);
     }
 

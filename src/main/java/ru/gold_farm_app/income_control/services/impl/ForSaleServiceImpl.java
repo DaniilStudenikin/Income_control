@@ -1,6 +1,7 @@
 package ru.gold_farm_app.income_control.services.impl;
 
 
+import org.javacord.api.event.message.MessageCreateEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,18 @@ public class ForSaleServiceImpl implements ForSaleService {
         forSaleRepository.save(forSale);
         logger.info(employee + "///" + forSale);
         return forSale;
+    }
+
+    @Override
+    public void delete(Long id, MessageCreateEvent event) {
+        Employee employee = employeeRepository.findByDiscordName(event.getMessageAuthor().getDiscriminatedName());
+        ForSale forSale = forSaleRepository.findById(id).orElseThrow(IllegalArgumentException::new);
+        logger.info(forSale.toString());
+        logger.info("Before delete: " + employee.getGold());
+        employee.setGold(employee.getGold() - forSale.getPrice());
+        logger.info("After delete: " + employee.getGold());
+        forSaleRepository.delete(forSale);
+        logger.info("ForSale with id=" + forSale.getId() + " and created by " + employee.getDiscordName() + " at " + forSale.getDate() + " successful deleted!");
     }
 
     //creating object ForSale from resourceList which is String array

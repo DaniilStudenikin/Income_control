@@ -1,6 +1,6 @@
 package ru.gold_farm_app.income_control.listeners.impl;
 
-import com.zaxxer.hikari.HikariDataSource;
+
 import org.javacord.api.entity.message.MessageBuilder;
 import org.javacord.api.event.message.MessageCreateEvent;
 import org.slf4j.Logger;
@@ -13,6 +13,7 @@ import ru.gold_farm_app.income_control.services.ForSaleService;
 
 
 import java.util.*;
+import java.util.regex.Pattern;
 
 @Component
 public class ForSaleListenerImpl implements ForSaleListener {
@@ -42,6 +43,17 @@ public class ForSaleListenerImpl implements ForSaleListener {
                 event.getChannel().sendMessage("Dear " + event.getMessageAuthor().getDisplayName() + ", please check you message and try again! You have some mistakes.");
             } else {
                 createForSale(forSaleResourcesList, event);
+            }
+        }
+        //Надо придумать паттерн чисел для бесконечного количества айдишников
+        if (Pattern.matches("!delete-for-sale \\d", event.getMessageContent())
+                || Pattern.matches("!delete-for-sale \\d\\d", event.getMessageContent())
+                || Pattern.matches("!delete-for-sale \\d\\d\\d", event.getMessageContent())) {
+            Long id = Long.valueOf(event.getMessageContent().replace(" ", "").substring(17));
+            try {
+                forSaleService.delete(id, event);
+            } catch (IllegalArgumentException e) {
+                event.getChannel().sendMessage("Список на продажу с таким id не существует. Попробуйте еще раз.");
             }
         }
     }
