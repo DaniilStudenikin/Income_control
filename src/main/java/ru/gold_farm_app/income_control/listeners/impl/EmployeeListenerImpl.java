@@ -43,6 +43,7 @@ public class EmployeeListenerImpl implements EmployeeListener {
         if (event.getMessageContent().equals("!update")) {
             try {
                 employeeService.update(event.getMessageAuthor());
+                event.getChannel().sendMessage(event.getMessageAuthor().getDisplayName() + " обновление вашего аккаунта прошло успешно!");
             } catch (IllegalArgumentException e) {
                 event.getChannel().sendMessage("Вы не зарегистрированы. Проследуйте инструкциям выше для регистрации");
             }
