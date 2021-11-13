@@ -2,6 +2,8 @@ package ru.gold_farm_app.income_control.services.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.javacord.api.event.message.MessageCreateEvent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -23,6 +25,8 @@ import java.util.List;
 
 @Service
 public class ResourcePriceServiceImpl implements ResourcePriceService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(ResourcePriceServiceImpl.class);
 
     @Autowired
     private ResourceRepository resourceRepository;
@@ -66,7 +70,7 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
     @Override
     @Transactional
     public void updatePrice() {
-        System.out.println("START UPDATING");
+        LOG.info("Начало обновления цен");
         List<ResourcePrice> resourcePrices = resourcePriceRepository.findAll();
         for (ResourcePrice resP : resourcePrices) {
             try {
@@ -81,6 +85,7 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
                 e.printStackTrace();
             }
         }
+        LOG.info("Обновление цен прошло успешно");
     }
 
     @Override

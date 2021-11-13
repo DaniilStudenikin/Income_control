@@ -1,6 +1,7 @@
 package ru.gold_farm_app.income_control.listeners.impl;
 
 
+import org.javacord.api.entity.message.MessageAuthor;
 import org.javacord.api.entity.message.MessageBuilder;
 import org.javacord.api.event.message.MessageCreateEvent;
 import org.slf4j.Logger;
@@ -34,22 +35,21 @@ public class ForSaleListenerImpl implements ForSaleListener {
                     .replace("Gems:", "")
                     .replace("Primals:", "");
             String[] splitedForSale = formattedForSale.split(",");
+            logger.info("Список ресурсов предоставленный работником:");
             logger.info(Arrays.toString(splitedForSale));
             List<String[]> forSaleResourcesList = new ArrayList<>();
             for (String value : splitedForSale) {
                 forSaleResourcesList.add(value.split("="));
             }
             if (forSaleResourcesList.size() != 28) {
-                event.getChannel().sendMessage("Dear " + event.getMessageAuthor().getDisplayName() + ", please check you message and try again! You have some mistakes.");
+                event.getChannel().sendMessage("Дорогой " + event.getMessageAuthor().getDisplayName() + ", проверь пожалуйста свое сообщение внимательно, у тебя там ошибки, как исправишь попробуй еще раз.");
             } else {
-                createForSale(forSaleResourcesList, event);
+                createForSale(forSaleResourcesList, event.getMessageAuthor(), event);
             }
         }
-        //Надо придумать паттерн чисел для бесконечного количества айдишников
+
         if (event.getMessageAuthor().getDisplayName().equals("fastrapier")
-                && (Pattern.matches("!delete-for-sale \\d", event.getMessageContent())
-                || Pattern.matches("!delete-for-sale \\d\\d", event.getMessageContent())
-                || Pattern.matches("!delete-for-sale \\d\\d\\d", event.getMessageContent()))) {
+                && (Pattern.matches("!delete-for-sale \\d", event.getMessageContent()))) {
             Long id = Long.valueOf(event.getMessageContent().replace(" ", "").substring(16));
             try {
                 forSaleService.delete(id);
@@ -60,18 +60,20 @@ public class ForSaleListenerImpl implements ForSaleListener {
         }
     }
 
-    private void createForSale(List<String[]> forSaleResourcesList, MessageCreateEvent event) {
-        ForSale forSale = forSaleService.createForSale(forSaleResourcesList, event.getMessageAuthor().getDiscriminatedName());
+    private void createForSale(List<String[]> forSaleResourcesList, MessageAuthor employee, MessageCreateEvent event) {
+        ForSale forSale = forSaleService.createForSale(forSaleResourcesList, employee);
         // Presenting price in 000g 000s 000c format
         var g = forSale.getPrice() / 10000;
         var s = forSale.getPrice() / 100 % 100;
         var c = forSale.getPrice() % 100;
         event.getChannel().sendMessage("Your profit for today - " + g + "g " + s + "s " + c + "c" + "!");
         if (g > 2500) {
-            new MessageBuilder().append("Gratz!")
+
+            new MessageBuilder().append("Поздравляю! Ты крут!♥")
                     .send(event.getChannel());
         } else {
-            new MessageBuilder().append("You can do it better bro...").send(event.getChannel());
+
+            new MessageBuilder().append("Сегодня не твой день, надеюсь завтра будет лучше...").send(event.getChannel());
         }
     }
 }

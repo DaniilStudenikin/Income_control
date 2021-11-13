@@ -21,6 +21,12 @@ public class Employee {
 
     private Long gold;
 
+    @Column(name = "is_deleted")
+    private Boolean isDeleted;
+
+    @Column(name = "discord_id")
+    private String discordId;
+
     @ManyToOne
     private ServerFraction server;
 

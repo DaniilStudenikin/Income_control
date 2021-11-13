@@ -1,11 +1,13 @@
 package ru.gold_farm_app.income_control.services.impl;
 
+import org.javacord.api.entity.message.MessageAuthor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.gold_farm_app.income_control.model.Employee;
+import ru.gold_farm_app.income_control.model.ServerFraction;
 import ru.gold_farm_app.income_control.repository.EmployeeRepository;
 import ru.gold_farm_app.income_control.services.EmployeeService;
 
@@ -19,23 +21,37 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     @Transactional
-    public Integer add(Employee employee) {
-        if (get(employee).isEmpty()) {
-            employeeRepository.save(employee);
-            return 1;
-        } else return 0;
+    public Boolean add(MessageAuthor employee, ServerFraction server) {
 
+        if (isCreated(employee)) {
+            employeeRepository.save(Employee.builder()
+                    .discordName(employee.getDiscriminatedName())
+                    .server(server)
+                    .gold(0L)
+                    .discordId(employee.getIdAsString())
+                    .build());
+            return true;
+        } else
+            return false;
+
+    }
+
+    @Override
+    public void update(MessageAuthor employee) {
+        Employee employeeFromDb = employeeRepository.findByDiscordId(employee.getIdAsString()).orElseThrow(IllegalArgumentException::new);
+        employeeFromDb.setDiscordName(employee.getDiscriminatedName());
+        employeeFromDb.setDiscordId(employee.getIdAsString());
+        employeeRepository.save(employeeFromDb);
     }
 
 
     @Override
-    public Optional<Employee> get(Employee employee) {
-        return Optional.ofNullable(employeeRepository.findByDiscordName(employee.getDiscordName()));
+    public Boolean isCreated(MessageAuthor employee) {
+        return employeeRepository.findByDiscordId(employee.getIdAsString()).isEmpty();
     }
 
     @Override
-    public void addIncome(String discordName, Long gold) {
-        Employee employee = employeeRepository.findByDiscordName(discordName);
+    public void addIncome(Employee employee, Long gold) {
         logger.info("Before adding income: " + employee.getGold());
         employee.setGold(gold + employee.getGold());
         logger.info("After adding income: " + employee.getGold());
@@ -43,7 +59,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void delete(Employee employee) {
-        employeeRepository.delete(employee);
+    public void delete(Long id) {
+        employeeRepository.getById(id).setIsDeleted(true);
     }
 }

@@ -55,7 +55,7 @@ public class ResourcePriceListenerImpl implements ResourcePriceListener {
         List<ResourcePrice> resourcePrices = resourcePriceService.resourcePricesByServer(event, server);
         sendPriceMessage(event, resourcePrices);
     }
-    //Отправление сообщения,если вдруг захочу изменить само сообщение
+    //Отправление сообщения, для редактирования сообщения в котором отправляется ресурс
     private void sendPriceMessage(MessageCreateEvent event, List<ResourcePrice> resourcePrices) {
         event.getMessageAuthor().asUser().orElseThrow(IllegalArgumentException::new)
                 .sendMessage("Цены с сервера: " + resourcePrices.get(0).getServer().getServerFraction());

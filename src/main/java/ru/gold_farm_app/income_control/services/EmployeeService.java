@@ -1,15 +1,19 @@
 package ru.gold_farm_app.income_control.services;
 
+import org.javacord.api.entity.message.MessageAuthor;
 import ru.gold_farm_app.income_control.model.Employee;
+import ru.gold_farm_app.income_control.model.ServerFraction;
 
 import java.util.Optional;
 
 public interface EmployeeService {
-    Integer add(Employee employee);
+    Boolean add(MessageAuthor employee, ServerFraction server);
 
-    Optional<Employee> get(Employee employee);
+    void update(MessageAuthor employee);
 
-    void addIncome(String discordName, Long gold);
+    Boolean isCreated(MessageAuthor employee);
 
-    void delete(Employee employee);
+    void addIncome(Employee employee, Long gold);
+
+    void delete(Long id);
 }

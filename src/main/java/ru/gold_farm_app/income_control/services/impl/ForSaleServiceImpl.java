@@ -1,7 +1,7 @@
 package ru.gold_farm_app.income_control.services.impl;
 
 
-import org.javacord.api.event.message.MessageCreateEvent;
+import org.javacord.api.entity.message.MessageAuthor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,17 +38,18 @@ public class ForSaleServiceImpl implements ForSaleService {
 
     @Override
     @Transactional
-    public ForSale createForSale(List<String[]> forSaleList, String discordName) {
-        Employee employee = employeeRepository.findByDiscordName(discordName);
+    public ForSale createForSale(List<String[]> forSaleList, MessageAuthor employee) {
+        Employee employeeFromDb = employeeRepository.findByDiscordId(employee.getIdAsString()).orElseThrow(IllegalArgumentException::new);
         ForSale forSale = from(forSaleList);
-        Long price = price(forSaleList, employee);
+        Long price = price(forSaleList, employeeFromDb);
         //adding gold into employee's acc
         forSale.setPrice(price);
-        forSale.setEmployee(employee);
+        forSale.setEmployee(employeeFromDb);
 
-        employeeService.addIncome(discordName, forSale.getPrice());
+        employeeService.addIncome(employeeFromDb, forSale.getPrice());
         forSaleRepository.save(forSale);
-        logger.info(employee + "///" + forSale);
+        logger.info("Работник " + employee);
+        logger.info("Принес на продажу предметы " + forSale);
         return forSale;
     }
 
@@ -58,14 +59,14 @@ public class ForSaleServiceImpl implements ForSaleService {
         ForSale forSale = forSaleRepository.findById(id).orElseThrow(IllegalArgumentException::new);
         Employee employee = employeeRepository.findByDiscordName(forSale.getEmployee().getDiscordName());
         logger.info(forSale.toString());
-        logger.info("Before delete: " + employee.getGold());
+        logger.info("Золото работника до удаления отчета: " + employee.getGold());
         employee.setGold(employee.getGold() - forSale.getPrice());
-        logger.info("After delete: " + employee.getGold());
+        logger.info("Золото работника после удаления отчета: " + employee.getGold());
         forSaleRepository.deleteById(id);
-        logger.info("ForSale with id=" + forSale.getId() + " and created by " + employee.getDiscordName() + " at " + forSale.getDate() + " successful deleted!");
+        logger.info("Отчет с id=" + forSale.getId() + " созднный " + employee.getDiscordName() + " в " + forSale.getDate() + " успешно удален!");
     }
 
-    //creating object ForSale from resourceList which is String array
+    //Ковертация списка массивов вида [имя ресурса, количество ресурса] в объект ForSale
     private ForSale from(List<String[]> forSaleResourceList) {
         ForSale forSale = new ForSale();
         forSale.setDate(LocalDateTime.now());
