@@ -37,7 +37,7 @@ public class EmployeeListenerImpl implements EmployeeListener {
                             append("Упс. Вы уже зарегистрированы! Больше этого делать не нужно))))").send(event.getChannel());
 
             } catch (IllegalArgumentException e) {
-                event.getChannel().sendMessage("Your message is wrong.Please,try again.It maybe problem with server name.");
+                event.getChannel().sendMessage("Ваше сообщение не правильно,проверьте его,может проблема в названии сервера.");
             }
         }
         if (event.getMessageContent().equals("!update")) {
