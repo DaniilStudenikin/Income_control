@@ -48,7 +48,7 @@ public class ForSaleServiceImpl implements ForSaleService {
 
         employeeService.addIncome(employeeFromDb, forSale.getPrice());
         forSaleRepository.save(forSale);
-        logger.info("Работник " + employee);
+        logger.info("Работник " + employeeFromDb);
         logger.info("Принес на продажу предметы " + forSale);
         return forSale;
     }
@@ -57,7 +57,7 @@ public class ForSaleServiceImpl implements ForSaleService {
     @Transactional
     public void delete(Long id) {
         ForSale forSale = forSaleRepository.findById(id).orElseThrow(IllegalArgumentException::new);
-        Employee employee = employeeRepository.findByDiscordName(forSale.getEmployee().getDiscordName());
+        Employee employee = employeeRepository.findById(forSale.getEmployee().getId()).orElseThrow(IllegalArgumentException::new);
         logger.info(forSale.toString());
         logger.info("Золото работника до удаления отчета: " + employee.getGold());
         employee.setGold(employee.getGold() - forSale.getPrice());
@@ -140,7 +140,9 @@ public class ForSaleServiceImpl implements ForSaleService {
         long price = 0L;
         //[ResourceName(DreamingGlory), ]
         for (String[] s : list) {
-            price += resourcePriceRepository.findByResourceAndServer(getResourceByName(s[0]), employee.getServer()).orElseThrow(IllegalArgumentException::new).getPrice() * anInt(s);
+            price += resourcePriceRepository
+                    .findByResourceAndServer(getResourceByName(s[0]), employee.getServer()).orElseThrow(IllegalArgumentException::new)
+                    .getPrice() * anInt(s);
         }
         return price;
     }
