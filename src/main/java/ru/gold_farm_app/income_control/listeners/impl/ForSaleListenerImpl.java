@@ -66,7 +66,7 @@ public class ForSaleListenerImpl implements ForSaleListener {
         var g = forSale.getPrice() / 10000;
         var s = forSale.getPrice() / 100 % 100;
         var c = forSale.getPrice() % 100;
-        event.getChannel().sendMessage("Your profit for today - " + g + "g " + s + "s " + c + "c" + "!");
+        event.getChannel().sendMessage("Ты заработал сегодня - " + g + "g " + s + "s " + c + "c" + "!");
         if (g > 2500) {
 
             new MessageBuilder().append("Поздравляю! Ты крут!♥")
