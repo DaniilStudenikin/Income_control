@@ -49,7 +49,7 @@ public class ForSaleListenerImpl implements ForSaleListener {
         }
 
         if (event.getMessageAuthor().getDisplayName().equals("fastrapier")
-                && (Pattern.matches("!delete-for-sale \\d", event.getMessageContent()))) {
+                && event.getMessageContent().startsWith("!delete-for-sale")) {
             Long id = Long.valueOf(event.getMessageContent().replace(" ", "").substring(16));
             try {
                 forSaleService.delete(id);
