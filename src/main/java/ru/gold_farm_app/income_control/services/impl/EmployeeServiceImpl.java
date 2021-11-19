@@ -28,6 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     .discordName(employee.getDiscriminatedName())
                     .server(server)
                     .gold(0L)
+                    .isDeleted(false)
                     .discordId(employee.getIdAsString())
                     .build());
             return true;
