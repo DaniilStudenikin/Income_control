@@ -54,7 +54,7 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
                     Long price = json.get("stats").get("current").get("minBuyout").asLong();
                     resourcePriceRepository.save(ResourcePrice.builder()
                             .resource(res)
-                            .price(price)
+                            .price((long) (price - price * 0.05))
                             .server(server)
                             .scannedOn(LocalDateTime.now())
                             .build());
@@ -76,8 +76,9 @@ public class ResourcePriceServiceImpl implements ResourcePriceService {
             try {
                 var url = new URL("https://api.nexushub.co/wow-classic/v1/items/" + resP.getServer().getServerFraction() + "/" + resP.getResource().getItemId());
                 var json = objectMapper.readTree(url);
+                var price = json.get("stats").get("current").get("minBuyout").asLong();
                 System.out.println(json.toString());
-                resP.setPrice(json.get("stats").get("current").get("minBuyout").asLong());
+                resP.setPrice((long) (price - price * 0.05));
                 resP.setScannedOn(LocalDateTime.now());
                 resourcePriceRepository.save(resP);
                 Thread.sleep(300);

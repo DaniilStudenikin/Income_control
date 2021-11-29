@@ -39,7 +39,7 @@
 #         'talasite'),
 #        (22, 'https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_livingruby_02.jpg', 23436, 'LivingRuby',
 #         'living-ruby'),
-#        (23, 'https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_nobletopaz_02.jpg', 23439, 'NobleTopaz',
+#        (23, 'https://wow.zamimg.com/images/wow/icons/large/in_jewelcrafting_nobletopaz_02.jpg', 23439, 'NobleTopaz',
 #         'noble-topaz'),
 #        (24, 'https://wow.zamimg.com/images/wow/icons/large/inv_elemental_primal_mana.jpg', 22457, 'PrimalMana',
 #         'primal-mana'),
