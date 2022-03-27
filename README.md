@@ -7,43 +7,43 @@
 Команда для исполнения вычислений ботом.
 <div>
 [!forSale
------------------------
-Herbs: 
-Fel Lotus=0,
-Dreaming Glory=0,
-Nightmare Vine=0,
-Mana Thistle=0,
-Nightmare Seed=0,
-Netherbloom=0,
-Terocone=0,
------------------------
-Ores:
-Fel Iron Ore=0,
-Eternium Ore=0,
-Adamantite Ore=0,
-Khorium Ore=0,
------------------------
-Gems:
-Blood Garnet=0,
-Flame Spessarite=0,
-Golden Draenite=0,
-Shadow Draenite=0,
-Deep Peridot=0,
-Azure Moonstone=0,
-Dawnstone=0,
-Nightseye=0,
-Star of Elune=0,
-Talasite=0,
-Living Ruby=0,
-Noble Topaz=0,
------------------------
-Primals:
-Primal Mana=0,
-Primal Fire=0,
-Primal Life=0,
-Primal Earth=0,
-Primal Air=0
------------------------]
+  -----------------------
+  Herbs: 
+  Fel Lotus=0,
+  Dreaming Glory=0,
+  Nightmare Vine=0,
+  Mana Thistle=0,
+  Nightmare Seed=0,
+  Netherbloom=0,
+  Terocone=0,
+  -----------------------
+  Ores:
+  Fel Iron Ore=0,
+  Eternium Ore=0,
+  Adamantite Ore=0,
+  Khorium Ore=0,
+  -----------------------
+  Gems:
+  Blood Garnet=0,
+  Flame Spessarite=0,
+  Golden Draenite=0,
+  Shadow Draenite=0,
+  Deep Peridot=0,
+  Azure Moonstone=0,
+  Dawnstone=0,
+  Nightseye=0,
+  Star of Elune=0,
+  Talasite=0,
+  Living Ruby=0,
+  Noble Topaz=0,
+  -----------------------
+  Primals:
+  Primal Mana=0,
+  Primal Fire=0,
+  Primal Life=0,
+  Primal Earth=0,
+  Primal Air=0
+  -----------------------]
 </div
 
 На выходе получаем:
